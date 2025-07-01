@@ -53,8 +53,8 @@ This is the official repository for Halo’s **Next.js application**—a modern,
 - [Next.js](https://nextjs.org/) (App Router)
 - [TypeScript](https://www.typescriptlang.org/)
 - [next-intl](https://next-intl.dev/) for i18n
-- [OpenAI / Ultravox / Custom Agents] _(TBD: Replace with actual stack)_
-- [Tailwind CSS](https://tailwindcss.com/) (optional)
+- [OpenAI / Ultravox / Custom Agents]
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ---
 
