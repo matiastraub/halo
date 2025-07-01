@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Halo — Empowering Business Transformation with AI
 
-## Getting Started
+**Halo** is a consulting and development company dedicated to revolutionizing business processes through cutting-edge AI technology and expert-led digital solutions. Our mission is to help organizations unlock new levels of efficiency, innovation, and growth by combining strategic insight, AI agent development, and a strong culture of learning.
 
-First, run the development server:
+## 🚀 Vision
+
+> _“Revolutionize your workflows with AI. Halo brings intelligent automation and practical innovation to your everyday operations.”_
+
+---
+
+## 🧠 Our Three Pillars
+
+### 1. **Strategy**
+
+We work closely with businesses to understand their unique challenges and design AI roadmaps that align with their long-term goals.
+
+- Business process analysis
+- Use case identification
+- AI transformation planning
+
+### 2. **Education**
+
+We empower teams through knowledge, training, and cultural transformation—bridging the gap between humans and intelligent systems.
+
+- AI literacy programs
+- Team upskilling & workshops
+- Change management & AI culture
+
+### 3. **Development**
+
+We build robust, scalable solutions that integrate AI agents into real-world workflows—enhancing automation, decision-making, and productivity.
+
+- Custom AI agent development
+- Next.js-powered interfaces
+- Scalable cloud integrations
+
+---
+
+## 🛠️ About the Project
+
+This is the official repository for Halo’s **Next.js application**—a modern, high-performance platform combining:
+
+- ✅ Server Components & App Router architecture (Next.js 13+)
+- 🤖 AI agent integration and orchestration
+- 🌐 Internationalization with `next-intl`
+- ⚙️ Modular architecture for scalability
+- 📦 API routes for agent control and business logic
+
+---
+
+## 🧪 Technologies Used
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [TypeScript](https://www.typescriptlang.org/)
+- [next-intl](https://next-intl.dev/) for i18n
+- [OpenAI / Ultravox / Custom Agents] _(TBD: Replace with actual stack)_
+- [Tailwind CSS](https://tailwindcss.com/) (optional)
+
+---
+
+## 🌍 Getting Started
 
 ```bash
+git clone https://github.com/matiastraub/halo.git
+cd halo
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
