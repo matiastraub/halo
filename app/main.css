@@ -1,0 +1,40 @@
+      :root {
+        --accent-color: #ff81a6;
+        --accent2-color: #ffc107;
+        --accent3-color: #60d394;
+        --accent4-color: #57a2e3;
+        --primary-color: #2e317c;
+        --dark-text-color: #202020;
+        --gray-text-color: #757575;
+        --button-padding-x: 16px;
+        --button-padding-y: 12px;
+        --font-family-body: 'Roboto', sans-serif;
+        --light-text-color: #ffffff;
+        --dark-border-color: #404040;
+        --light-border-color: #e0e0e0;
+        --font-family-heading: 'Montserrat', sans-serif;
+        --button-rounded-radius: 8px;
+        --dark-background-color: #1b1b1b;
+        --light-background-color: #e6e7f2;
+        --medium-background-color: #bcc0d9;
+        --primary-button-bg-color: #2e317c;
+        --primary-button-text-color: #ffffff;
+        --secondary-button-bg-color: #ebebeb;
+        --secondary-button-text-color: #2e317c;
+        --primary-button-hover-bg-color: #242b63;
+        --primary-button-hover-text-color: #ffffff;
+        --secondary-button-hover-bg-color: #d6d6d6;
+        --secondary-button-hover-text-color: #2e317c;
+      }
+
+            .hovered-element {
+        outline: #3871e0 dashed 2px;
+      }
+
+      .clicked-element {
+        outline: #3871e0 solid 2px;
+      }
+
+      .clicked-code-section {
+        border: #3b82f6 solid 2px;
+      }

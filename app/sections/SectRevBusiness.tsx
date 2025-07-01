@@ -1,0 +1,71 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
+export default async function SectRevBusiness() {
+  return (
+    <section
+      className="bg-gradient-to-b from-[#ffffff] to-[var(--light-background-color)] lg:py-2 code-section"
+      id="s2nkd0i"
+    >
+      <div className="container mx-auto mb-24 px-6">
+        <div className="flex flex-col-reverse items-center lg:flex-row">
+          <div className="mt-12 w-full lg:mt-32 lg:w-[45%] lg:pr-14">
+            <h1 className="mb-4 text-center text-4xl font-bold [font-family:var(--font-family-heading)] lg:text-left lg:text-5xl xl:text-6xl">
+              Revolutionize Your Business Processes with AI
+            </h1>
+            <p className="mb-12 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
+              Halo empowers organizations to enhance efficiency and drive innovation through
+              intelligent automation. Experience a new standard of operational excellence with our
+              AI-driven solutions.
+            </p>
+            <div className="mb-12 flex items-center justify-center lg:items-start lg:justify-start">
+              <Link
+                href="/services"
+                className="items-center rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
+              >
+                Discover Our Solutions
+              </Link>
+            </div>
+            <div className="flex items-center pb-10">
+              <Image
+                src="/images/Emily.jpg"
+                alt="Satisfied Client"
+                width={72}
+                height={72}
+                className="mr-4 h-[72px] w-[72px] rounded-full object-cover"
+              />
+              <div>
+                <i
+                  className="fa-sharp fa-solid fa-quote-left relative -top-2 mr-1"
+                  aria-hidden="true"
+                ></i>
+                <p className="mb-2 inline text-lg text-[var(--dark-text-color)]">
+                  With Halos AI solutions, we streamlined our workflow, significantly reducing
+                  processing time and enhancing team collaboration.
+                </p>
+                <i
+                  className="fa-sharp fa-solid fa-quote-right relative -top-2 ml-1"
+                  aria-hidden="true"
+                ></i>
+                <p>
+                  <span className="font-semibold text-[var(--dark-text-color)]">Emily Johnson</span>
+                  <span className="pl-2 font-semibold text-[var(--primary-color)]">
+                    (Operations Director at Innovative Solutions)
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center w-full h-full lg:w-[55%] lg:pl-6">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="images/business-strategy.webp"
+              alt="Hero"
+              className="mt-8 max-h-[200px] lg:max-h-[500px] h-auto w-auto object-contain lg:mt-0"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
