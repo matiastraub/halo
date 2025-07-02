@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
-export default async function SectRevBusiness() {
+export default function SectRevBusiness() {
+  const t = useTranslations('Home')
+
   return (
     <section
       className="bg-gradient-to-b from-[#ffffff] to-[var(--light-background-color)] lg:py-2 code-section"
@@ -11,7 +14,7 @@ export default async function SectRevBusiness() {
         <div className="flex flex-col-reverse items-center lg:flex-row">
           <div className="mt-12 w-full lg:mt-32 lg:w-[45%] lg:pr-14">
             <h1 className="mb-4 text-center text-4xl font-bold [font-family:var(--font-family-heading)] lg:text-left lg:text-5xl xl:text-6xl">
-              Revolutionize Your Business Processes with AI
+              {t('revolutionizeBusinessProcesses')}
             </h1>
             <p className="mb-12 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
               Halo empowers organizations to enhance efficiency and drive innovation through
