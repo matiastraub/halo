@@ -1,4 +1,4 @@
-import Plan from '../components/Plan'
+import Plan from '../../components/Plan'
 const items1: string[] = [
   'Up to 5,000 Users',
   'Unlimited Project Creation',
