@@ -1,8 +1,44 @@
 {
+    "Nav": {
+        "aboutUs": "Sobre nosotros",
+        "services": "Servicios",
+        "resources": "Recursos",
+        "careers": "Carreras",
+        "contactUs": "Contáctanos",
+        "blog": "Blog",
+        "faq": "Preguntas Frequentes",
+        "caseStudies": "Estudios de caso",
+        "btnLogin": "Iniciar Sesión",
+        "btnSignUp": "Registrarse"
+    },
     "Home": {
         "monitorBusinessPerformance": "Supervise el rendimiento de su negocio y las métricas clave",
         "analyticDashboard": "Panel de análisis",
         "revolutionizeBusinessProcesses": "Revoluciona tus procesos comerciales con IA",
-        "haloEmpowerment": "Halo empodera a las organizaciones para mejorar la eficiencia y fomentar la innovación a través de la automatización inteligente. Experimente un nuevo estándar de excelencia operativa con nuestras soluciones impulsadas por IA."
+        "haloEmpowerment": "Halo empodera a las organizaciones para mejorar la eficiencia y fomentar la innovación a través de la automatización inteligente. Experimente un nuevo estándar de excelencia operativa con nuestras soluciones impulsadas por IA.",
+        "btnDiscoverOurSolutions": "Descubre nuestras soluciones",
+        "testimonialsText-01": "Con las soluciones de inteligencia artificial de Halo, optimizamos nuestro flujo de trabajo, reduciendo significativamente el tiempo de procesamiento y mejorando la colaboración en equipo.",
+        "testimonialsName-01": "Emilio Jorquera",
+        "testimonialsTitle-01": "(Director Operacional en Innovative Solutions)",
+        "streamLineBussinessWithAI": "Optimice su negocio con IA",
+        "unlockFullPotentials": "Descubra todo el potencial de sus operaciones con las soluciones innovadoras de Halo",
+        "optimizeTitle-01": "Integración fluida",
+        "optimizeDesc-01": "Conecta fácilmente tus herramientas y fuentes de datos existentes con la plataforma de IA de Halo para una experiencia unificada.",
+        "optimizeTitle-02": "Personaliza tu flujo de trabajo",
+        "optimizeDesc-02": "Adapta la configuración de automatización a tus procesos empresariales específicos, optimizando cada paso para una mayor eficiencia.",
+        "optimizeTitle-03": "Mejora la colaboración en equipo",
+        "optimizeDesc-03": "Facilita la comunicación y la colaboración fluidas en tu equipo, garantizando que todos estén coordinados e informados.",
+        "optimizeTitle-04": "Consigue una seguridad robusta",
+        "optimizeDesc-04": "Protege tus datos confidenciales con funciones de seguridad de vanguardia diseñadas para mantener tu información segura.",
+        "tranformYourBusinessTitle": "Transforme su negocio con soluciones basadas en IA",
+        "tranformYourBusinessDesc": "Halo proporciona herramientas de IA de vanguardia que optimizan sus flujos de trabajo, permitiéndole operar de forma más eficiente y eficaz. Adopte el futuro de los procesos empresariales hoy mismo.",
+        "transformYourBusinessList-01": "Integre a la perfección con sus sistemas existentes para una transición sin complicaciones.",
+        "transformYourBusinessList-02": "Personalice flujos de trabajo de automatización que se adapten perfectamente a sus necesidades operativas.",
+        "transformYourBusinessList-03": "Mejore la colaboración entre los miembros del equipo para fomentar la innovación y la productividad.",
+        "transformYourBusinessList-04": "Implemente protocolos de seguridad robustos que garanticen la protección de sus datos.",
+        "btnExploreOurServices": "Conoce nuestros servicios",
+        "testimonialsText-02": "¡Las herramientas de IA de Halo han revolucionado nuestras operaciones diarias, haciéndolas más fluidas y eficientes!",
+        "testimonialsName-02": "Diana Ospina",
+        "testimonialsTitle-02": "(Gerente General de Content Auto)"
     }
 }

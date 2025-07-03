@@ -1,6 +1,7 @@
 import Link from 'next/link'
-
+import { useTranslations } from 'next-intl'
 export default function NavBar() {
+  const t = useTranslations('Nav')
   return (
     <nav className="container mx-auto py-10">
       <div className="flex items-center justify-between relative">
@@ -31,12 +32,12 @@ export default function NavBar() {
           <ul className="flex flex-col lg:px-6 lg:flex-row flex-1 lg:justify-center lg:items-center lg:space-y-0 lg:space-x-8">
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
               <Link href="/about-us" className="text-[var(--dark-text-color)]">
-                About Us
+                {t('aboutUs')}
               </Link>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
               <Link href="/services" className="text-[var(--dark-text-color)]">
-                Services
+                {t('services')}
               </Link>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
@@ -45,7 +46,7 @@ export default function NavBar() {
                   type="button"
                   className="flex w-full items-center gap-1 text-[var(--dark-text-color)] lg:justify-center"
                 >
-                  <span>Resources</span>
+                  <span>{t('resources')}</span>
                   <i
                     className="fa-regular fa-chevron-down ml-1 transition lg:group-hover:rotate-[180deg]"
                     aria-hidden="true"
@@ -57,19 +58,19 @@ export default function NavBar() {
                       className="block cursor-pointer border-b border-solid px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium"
                       href="/blog"
                     >
-                      Blog
+                      {t('blog')}
                     </Link>
                     <Link
                       className="block cursor-pointer border-b border-solid px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium"
                       href="/case-studies"
                     >
-                      Case Studies
+                      {t('caseStudies')}
                     </Link>
                     <Link
                       className="block cursor-pointer px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium"
                       href="/faq"
                     >
-                      FAQ
+                      {t('faq')}
                     </Link>
                   </div>
                 </div>
@@ -77,24 +78,24 @@ export default function NavBar() {
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
               <Link href="/careers" className="text-[var(--dark-text-color)]">
-                Careers
+                {t('careers')}
               </Link>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
               <Link href="/contact-us" className="text-[var(--dark-text-color)]">
-                Contact Us
+                {t('contactUs')}
               </Link>
             </li>
           </ul>
           <div className="flex flex-col mt-4 lg:flex-row items-center space-y-4 lg:mt-0 lg:space-y-0 lg:space-x-4 text-sm lg:text-base">
             <Link href="/login" className="px-4 py-2 text-[var(--dark-text-color)]">
-              Log In
+              {t('btnLogin')}
             </Link>
             <Link
               href="/signup"
               className="rounded bg-[var(--primary-button-bg-color)] px-4 py-2 text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]"
             >
-              Sign Up
+              {t('btnSignUp')}
             </Link>
           </div>
         </div>

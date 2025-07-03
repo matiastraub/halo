@@ -1,8 +1,44 @@
 {
+    "Nav": {
+        "aboutUs": "About Us",
+        "services": "Services",
+        "resources": "Resources",
+        "careers": "Careers",
+        "contactUs": "Contact Us",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "caseStudies": "Case Studies",
+        "btnLogin": "Log In",
+        "btnSignUp": "Sign Up"
+    },
     "Home": {
         "monitorBusinessPerformance": "Monitor your business performance and key metrics",
         "analyticDashboard": "Analytics Dashboard",
         "revolutionizeBusinessProcesses": "Revolutionize Your Business Processes with AI",
-        "haloEmpowerment": "Halo empowers organizations to enhance efficiency and drive innovation through intelligent automation. Experience a new standard of operational excellence with our AI-driven solutions."
+        "haloEmpowerment": "Halo empowers organizations to enhance efficiency and drive innovation through intelligent automation. Experience a new standard of operational excellence with our AI-driven solutions.",
+        "btnDiscoverOurSolutions": "Discover Our Solutions",
+        "testimonialsText-01": "With Halo's AI solutions, we streamlined our workflow, significantly reducing processing time and enhancing team collaboration.",
+        "testimonialsName-01": "Emily Johnson",
+        "testimonialsTitle-01": "(Operations Director at Innovative Solutions)",
+        "streamLineBussinessWithAI": "Streamline Your Business with AI",
+        "unlockFullPotentials": "Unlock the full potential of your operations with Halos innovative solutions",
+        "optimizeTitle-01": "Integrate Seamlessly",
+        "optimizeDesc-01": "Effortlessly connect your existing tools and data sources with Halos AI platform for a unified experience.",
+        "optimizeTitle-02": "Customize Your Workflow",
+        "optimizeDesc-02": "Tailor automation settings to match your specific business processes, optimizing every step for efficiency.",
+        "optimizeTitle-03": "Enhance Team Collaboration",
+        "optimizeDesc-03": "Facilitate smooth communication and collaboration among your team, ensuring everyone is aligned and informed.",
+        "optimizeTitle-04": "Achieve Robust Security",
+        "optimizeDesc-04": "Protect your sensitive data with cutting-edge security features designed to keep your information safe and sound.",
+        "tranformYourBusinessTitle": " Transform Your Business with AI-Powered Solutions",
+        "tranformYourBusinessDesc": "Halo provides cutting-edge AI tools that streamline your workflows, enabling you to operate more efficiently and effectively. Embrace the future of business processes today.",
+        "transformYourBusinessList-01": "Seamlessly integrate with your existing systems for a hassle-free transition",
+        "transformYourBusinessList-02": "Customize automation workflows that align perfectly with your operational needs",
+        "transformYourBusinessList-03": "Enhance collaboration among team members to foster innovation and productivity",
+        "transformYourBusinessList-04": "Implement robust security protocols that ensure your data remains protected",
+        "btnExploreOurServices": "Explore Our Services!",
+        "testimonialsText-02": "Halo's AI tools have revolutionized our daily operations, making them smoother and more efficient!",
+        "testimonialsName-02": "Diana Ospina",
+        "testimonialsTitle-02": "(CEO at Content Auto)"
     }
 }

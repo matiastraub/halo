@@ -17,16 +17,14 @@ export default function SectRevBusiness() {
               {t('revolutionizeBusinessProcesses')}
             </h1>
             <p className="mb-12 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
-              Halo empowers organizations to enhance efficiency and drive innovation through
-              intelligent automation. Experience a new standard of operational excellence with our
-              AI-driven solutions.
+              {t('haloEmpowerment')}
             </p>
             <div className="mb-12 flex items-center justify-center lg:items-start lg:justify-start">
               <Link
                 href="/services"
                 className="items-center rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
               >
-                Discover Our Solutions
+                {t('btnDiscoverOurSolutions')}
               </Link>
             </div>
             <div className="flex items-center pb-10">
@@ -43,17 +41,18 @@ export default function SectRevBusiness() {
                   aria-hidden="true"
                 ></i>
                 <p className="mb-2 inline text-lg text-[var(--dark-text-color)]">
-                  With Halos AI solutions, we streamlined our workflow, significantly reducing
-                  processing time and enhancing team collaboration.
+                  {t('testimonialsText-01')}
                 </p>
                 <i
                   className="fa-sharp fa-solid fa-quote-right relative -top-2 ml-1"
                   aria-hidden="true"
                 ></i>
                 <p>
-                  <span className="font-semibold text-[var(--dark-text-color)]">Emily Johnson</span>
+                  <span className="font-semibold text-[var(--dark-text-color)]">
+                    {t('testimonialsName-01')}
+                  </span>
                   <span className="pl-2 font-semibold text-[var(--primary-color)]">
-                    (Operations Director at Innovative Solutions)
+                    {t('testimonialsTitle-01')}
                   </span>
                 </p>
               </div>
