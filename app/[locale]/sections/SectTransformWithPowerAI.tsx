@@ -12,7 +12,7 @@ const AllList = (props: AllListProps) => {
   const { t } = props
   const lst = []
   for (let i = 1; i <= 4; i++) {
-    lst.push(<List key={`list-transform-${i}`} text={t(`transformYourBusinessList-0${i}`)} />)
+    lst.push(<List key={`list-transform-${i}`} text={t(`transformYourBusinessList-${i}`)} />)
   }
   return lst
 }
@@ -48,7 +48,7 @@ export default function SectTransformWithPowerAI() {
                 {t('btnExploreOurServices')}
               </Link>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center" style={{ display: 'none' }}>
               <img
                 src="images/testimonial02.jpg"
                 alt="Happy Client"
@@ -64,7 +64,7 @@ export default function SectTransformWithPowerAI() {
                   aria-hidden="true"
                 ></i>
                 <p className="mb-2 inline text-lg text-[var(--dark-text-color)]">
-                  {t('testimonialsText-02')}
+                  {t('testimonialsText-2')}
                 </p>
                 <i
                   className="fa-sharp fa-solid fa-quote-right relative -top-2 ml-1"
@@ -73,10 +73,10 @@ export default function SectTransformWithPowerAI() {
                 <p>
                   <span className="font-semibold text-[var(--dark-text-color)]">
                     {' '}
-                    {t('testimonialsName-02')}
+                    {t('testimonialsName-2')}
                   </span>
                   <span className="pl-2 font-semibold text-[var(--primary-color)]">
-                    {t('testimonialsTitle-02')}
+                    {t('testimonialsTitle-2')}
                   </span>
                 </p>
               </div>

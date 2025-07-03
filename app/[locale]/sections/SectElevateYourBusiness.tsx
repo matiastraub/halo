@@ -1,7 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+
+const List = (props: { text: string }) => {
+  const { text } = props
+  return <li className="mb-3">{text}</li>
+}
+
+type AllListProps = { t: (key: string) => string }
+const AllList = (props: AllListProps) => {
+  const { t } = props
+  const lst = []
+  for (let i = 1; i <= 4; i++) {
+    lst.push(<List key={`list-elevate-${i}`} text={t(`elevateYourBusinessList-${i}`)} />)
+  }
+  return lst
+}
 
 export default function SectElevateYourBusiness() {
+  const t = useTranslations('Home')
   return (
     <>
       <section>
@@ -9,34 +26,20 @@ export default function SectElevateYourBusiness() {
           <div className="flex flex-col-reverse items-stretch lg:flex-row">
             <div className="lg:w-1/2 lg:pr-20">
               <h2 className="mb-4 text-center text-3xl font-bold [font-family:var(--font-family-heading)] sm:text-5xl lg:text-left">
-                Elevate Your Business Efficiency with Halos AI Innovations
+                {t('elevateYourBusinessTitle')}
               </h2>
               <p className="mb-6 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
-                Transform the way your business operates by leveraging AI technology that
-                streamlines processes, boosts productivity, and enhances collaborative efforts.
-                Unleash the power of intelligent automation with Halo.
+                {t('elevateYourBusinessDesc')}
               </p>
               <ul className="mb-12 list-disc pl-8 text-xl">
-                <li className="mb-3">
-                  Integrate your existing tools for a seamless transition to AI-driven workflows
-                </li>
-                <li className="mb-3">
-                  Customize automation features to align perfectly with your unique operational
-                  needs
-                </li>
-                <li className="mb-3">
-                  Foster real-time communication to enhance teamwork and project outcomes
-                </li>
-                <li>
-                  Implement advanced security measures to safeguard your critical business data
-                </li>
+                <AllList t={t} />
               </ul>
               <div className="flex justify-center lg:block">
                 <Link
                   href="/services"
                   className="mb-12 inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-medium text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
                 >
-                  Start Your Transformation Today!
+                  {t('btnStartYourTransformation')}
                 </Link>
               </div>
               <div className="flex items-center">
@@ -51,8 +54,7 @@ export default function SectElevateYourBusiness() {
                     aria-hidden="true"
                   ></i>
                   <p className="mb-2 inline text-lg text-[var(--dark-text-color)]">
-                    Halos AI solutions have streamlined our operations, enabling us to achieve
-                    unprecedented efficiency and clarity!
+                    {t('testimonialsText-3')}
                   </p>
                   <i
                     className="fa-sharp fa-solid fa-quote-right relative -top-2 ml-1"
@@ -60,10 +62,10 @@ export default function SectElevateYourBusiness() {
                   ></i>
                   <p>
                     <span className="font-semibold text-[var(--dark-text-color)]">
-                      Emily Johnson
+                      {t('testimonialsName-3')}
                     </span>
                     <span className="pl-2 font-semibold text-[var(--primary-color)]">
-                      (Chief Operations Officer at Modern Enterprises)
+                      {t('testimonialsTitle-3')}
                     </span>
                   </p>
                 </div>

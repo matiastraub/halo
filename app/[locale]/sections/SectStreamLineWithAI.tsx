@@ -25,8 +25,8 @@ const AllItems = (props: AllItemsProps) => {
       <Item
         key={`optimize-title-${i}`}
         number={i}
-        title={t(`optimizeTitle-0${i}`)}
-        desc={t(`optimizeDesc-0${i}`)}
+        title={t(`optimizeTitle-${i}`)}
+        desc={t(`optimizeDesc-${i}`)}
       />
     )
   }
