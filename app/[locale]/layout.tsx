@@ -6,10 +6,10 @@ import '../main.css'
 import { getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 
-type Props = {
+type Props = Readonly<{
   children: React.ReactNode
   params: { locale: string }
-}
+}>
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
