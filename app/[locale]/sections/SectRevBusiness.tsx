@@ -41,7 +41,7 @@ export default function SectRevBusiness() {
                   aria-hidden="true"
                 ></i>
                 <p className="mb-2 inline text-lg text-[var(--dark-text-color)]">
-                  {t('testimonialsText-01')}
+                  {t('testimonialsText-1')}
                 </p>
                 <i
                   className="fa-sharp fa-solid fa-quote-right relative -top-2 ml-1"
@@ -49,10 +49,10 @@ export default function SectRevBusiness() {
                 ></i>
                 <p>
                   <span className="font-semibold text-[var(--dark-text-color)]">
-                    {t('testimonialsName-01')}
+                    {t('testimonialsName-1')}
                   </span>
                   <span className="pl-2 font-semibold text-[var(--primary-color)]">
-                    {t('testimonialsTitle-01')}
+                    {t('testimonialsTitle-1')}
                   </span>
                 </p>
               </div>
