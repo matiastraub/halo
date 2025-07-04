@@ -98,6 +98,27 @@
         "choosePlan-items-3-4": "Integración con herramientas populares",
         "choosePlan-items-3-5": "Opciones avanzadas de uso compartido",
         "choosePlan-items-3-6": "Funciones de prueba de proyectos",
-        "choosePlan-items-3-7": "Almacenamiento seguro de datos"
+        "choosePlan-items-3-7": "Almacenamiento seguro de datos",
+        "blogTitle": "Desbloquea el futuro de los negocios con información sobre IA",
+        "blogDesc": "Sumérgete en nuestros artículos cuidadosamente seleccionados que revelan cómo la IA está transformando los procesos empresariales. Equípate con el conocimiento que impulsa a tu organización a prosperar en el entorno digital.",
+        "blogCardDate-1": "15 FEB 2023",
+        "blogCardTitle-1": "Optimice sus operaciones comerciales con IA",
+        "blogCardDesc-1": "Explore estrategias para optimizar sus procesos comerciales mediante IA y mejorar la productividad en toda su organización.",
+        "blogCardLink-1": "optimize-business-operations",
+        "blogCardImgSrc-1": "blog01.avif",
+        "blogCardImgAlt-1": "Operadores de ingeniería que utilizan el sistema SCADA en una planta industrial",
+        "blogCardDate-2": "20 FEB 2023",
+        "blogCardTitle-2": "Mejorando la colaboración en equipo mediante IA",
+        "blogCardDesc-2": "Descubra cómo las herramientas de IA pueden fomentar una mejor comunicación y colaboración, permitiendo que su equipo trabaje en conjunto de forma más eficaz.",
+        "blogCardLink-2": "enhancing-team-collaboration",
+        "blogCardImgSrc-2": "blog02.webp",
+        "blogCardImgAlt-2": "Automatización y optimización de procesos de negocio con Gears.",
+        "blogCardDate-3": "25 FEB 2023",
+        "blogCardTitle-3": "Logrando seguridad y cumplimiento normativo con IA",
+        "blogCardDesc-3": "Descubra cómo la IA puede ayudarle a proteger los datos de su empresa, garantizando el cumplimiento normativo y minimizando los riesgos en un panorama digital en constante evolución.",
+        "blogCardLink-3": "security-compliance-ai",
+        "blogCardImgSrc-3": "blog03.avif",
+        "blogCardImgAlt-3": "Tecnología, inteligencia artificial, digital, IA, mano, concepto, ciber, futuro, negocios, tecnología, ciencia, innovación, futurista, red, estrategia, antecedentes, virtual, datos, comunicación, aprendizaje, asistente, búsqueda.",
+        "btnReadMore": "Leer más"
     }
 }
