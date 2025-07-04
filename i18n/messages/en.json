@@ -98,6 +98,27 @@
         "choosePlan-items-3-5": "Integrate with Popular Tools",
         "choosePlan-items-3-6": "Advanced Sharing Options",
         "choosePlan-items-3-7": "Project Testing Capabilities",
-        "choosePlan-items-3-8": "Secure Data Storage"
+        "choosePlan-items-3-8": "Secure Data Storage",
+        "blogTitle": "Unlock the Future of Business with AI Insights",
+        "blogDesc": "Dive into our carefully curated articles that reveal how AI is transforming business processes. Equip yourself with knowledge that empowers your organization to thrive in a digital landscape.",
+        "blogCardDate-1": "15 FEB 2023",
+        "blogCardTitle-1": "Optimize Your Business Operations with AI",
+        "blogCardDesc-1": "Explore strategies to streamline your business processes using AI and enhance productivity across your organization.",
+        "blogCardLink-1": "optimize-business-operations",
+        "blogCardImgSrc-1": "blog01.avif",
+        "blogCardImgAlt-1": "Engineer Operators Using Scada System At Industrial Plant",
+        "blogCardDate-2": "20 FEB 2023",
+        "blogCardTitle-2": "Enhancing Team Collaboration Through AI",
+        "blogCardDesc-2": "Learn how AI tools can foster better communication and collaboration, enabling your team to work more effectively together.",
+        "blogCardLink-2": "enhancing-team-collaboration",
+        "blogCardImgSrc-2": "blog02.webp",
+        "blogCardImgAlt-2": "Automation and Optimization of Business Processes with Gears.",
+        "blogCardDate-3": "25 FEB 2023",
+        "blogCardTitle-3": "Achieving Security and Compliance with AI",
+        "blogCardDesc-3": "Discover how AI can help secure your business data, ensuring compliance while minimizing risks in an evolving digital landscape.",
+        "blogCardLink-3": "security-compliance-ai",
+        "blogCardImgSrc-3": "blog03.avif",
+        "blogCardImgAlt-3": "Technology artificial intelligence digital ai hand concept on cyber future business tech science innovation futuristic network strategy background virtual data communication learning assistant search.",
+        "btnReadMore": "Read More"
     }
 }
