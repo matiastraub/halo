@@ -1,9 +1,12 @@
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 export default function Footer() {
+  const t = useTranslations('Nav')
+
   return (
     <footer className="py-16 code-section" id="global-footer">
       <div className="container mx-auto px-4 text-center">
-        <div className="m-8 text-xl font-bold">
+        <div className="m-8 text-xl font-bold" style={{ display: 'none' }}>
           <Link
             href="/"
             className="text-3xl text-[var(--primary-color)] [font-family:var(--font-family-heading)]"
@@ -22,19 +25,13 @@ export default function Footer() {
             href="/about-us"
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
-            About Us
+            {t('aboutUs')}
           </Link>
           <Link
             href="/services"
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
-            Services
-          </Link>
-          <Link
-            href="/testimonials"
-            className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
-          >
-            Testimonials
+            {t('services')}
           </Link>
           <Link
             href="/blog"
@@ -46,15 +43,16 @@ export default function Footer() {
             href="/privacy-policy"
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
-            Privacy Policy
+            {t('privacyPolicy')}
           </Link>
           <Link
             href="/"
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
-            Terms &amp;amp; Conditions
+            {t('termsConditions')}
           </Link>
         </div>
+
         <div className="mb-8">
           <Link
             href="/"
