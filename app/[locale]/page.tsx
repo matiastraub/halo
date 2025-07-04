@@ -8,6 +8,7 @@ import SectOptimizeBusiness from './sections/SectOptimizeBusiness'
 import SectChooseYourPlan from './sections/SectChooseYourPlan'
 import SectUnlockFuture from './sections/SectUnlockFuture'
 import Footer from './layout/Footer'
+import ChatWidget from '../components/ChatWidget'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
               <SectChooseYourPlan />
               <SectUnlockFuture />
               <SectTransform />
+              <ChatWidget />
             </div>
             <div>
               <Footer />
