@@ -9,7 +9,9 @@
         "faq": "FAQ",
         "caseStudies": "Case Studies",
         "btnLogin": "Log In",
-        "btnSignUp": "Sign Up"
+        "btnSignUp": "Sign Up",
+        "privacyPolicy": "privacy Policy",
+        "termsConditions": "Terms & Conditions"
     },
     "Home": {
         "monitorBusinessPerformance": "Monitor your business performance and key metrics",
@@ -119,6 +121,9 @@
         "blogCardLink-3": "security-compliance-ai",
         "blogCardImgSrc-3": "blog03.avif",
         "blogCardImgAlt-3": "Technology artificial intelligence digital ai hand concept on cyber future business tech science innovation futuristic network strategy background virtual data communication learning assistant search.",
-        "btnReadMore": "Read More"
+        "btnReadMore": "Read More",
+        "transformTitle": "Experience Seamless Efficiency with Halo's AI Solutions",
+        "transformDesc": "Ready to transform your business processes? Our dedicated team at Halo is committed to enhancing your operational efficiency through innovative AI technology. Don't hesitate to reach out and discover how we can tailor solutions to meet your specific needs.",
+        "btnContactUsToday": "Contact Us Today"
     }
 }

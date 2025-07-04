@@ -3,13 +3,15 @@
         "aboutUs": "Sobre nosotros",
         "services": "Servicios",
         "resources": "Recursos",
-        "careers": "Carreras",
+        "careers": "Oportunidades",
         "contactUs": "Contáctanos",
         "blog": "Blog",
         "faq": "Preguntas Frequentes",
         "caseStudies": "Estudios de caso",
         "btnLogin": "Iniciar Sesión",
-        "btnSignUp": "Registrarse"
+        "btnSignUp": "Registrarse",
+        "privacyPolicy": "Política de Privacidad",
+        "termsConditions": "Términos & Condiciones"
     },
     "Home": {
         "monitorBusinessPerformance": "Supervise el rendimiento de su negocio y las métricas clave",
@@ -114,11 +116,14 @@
         "blogCardImgSrc-2": "blog02.webp",
         "blogCardImgAlt-2": "Automatización y optimización de procesos de negocio con Gears.",
         "blogCardDate-3": "25 FEB 2023",
-        "blogCardTitle-3": "Logrando seguridad y cumplimiento normativo con IA",
-        "blogCardDesc-3": "Descubra cómo la IA puede ayudarle a proteger los datos de su empresa, garantizando el cumplimiento normativo y minimizando los riesgos en un panorama digital en constante evolución.",
+        "blogCardTitle-3": "Seguridad y cumplimiento normativo con IA",
+        "blogCardDesc-3": "Descubra cómo la IA puede ayudarle a proteger los datos de su empresa, garantizando el cumplimiento normativo y minimizando riesgos.",
         "blogCardLink-3": "security-compliance-ai",
         "blogCardImgSrc-3": "blog03.avif",
         "blogCardImgAlt-3": "Tecnología, inteligencia artificial, digital, IA, mano, concepto, ciber, futuro, negocios, tecnología, ciencia, innovación, futurista, red, estrategia, antecedentes, virtual, datos, comunicación, aprendizaje, asistente, búsqueda.",
-        "btnReadMore": "Leer más"
+        "btnReadMore": "Leer más",
+        "transformTitle": "Experimente una eficiencia sin interrupciones con las soluciones de IA de Halo",
+        "transformDesc": "¿Listo para transformar sus procesos de negocio? Nuestro equipo dedicado en Halo se compromete a mejorar su eficiencia operativa mediante tecnología de IA innovadora. No dude en contactarnos y descubra cómo podemos adaptar las soluciones a sus necesidades específicas.",
+        "btnContactUsToday": "Contáctenos hoy mismo"
     }
 }

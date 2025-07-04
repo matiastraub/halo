@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 export default function SecTransform() {
+  const t = useTranslations('Home')
+
   return (
     <section className="mt-12 bg-[var(--light-background-color)] py-12 code-section" id="ssrvk1s">
       <div className="container mx-auto flex flex-col sm:flex-row">
@@ -10,20 +13,17 @@ export default function SecTransform() {
         </div>
         <div className="flex w-full flex-col justify-center p-8 md:w-[45%] md:pr-14">
           <h3 className="mb-2 text-center text-3xl font-bold [font-family:var(--font-family-heading)] sm:text-left sm:text-6xl">
-            Experience Seamless Efficiency with Halo&aps;s AI Solutions
+            {t('transformTitle')}
           </h3>
           <p className="mb-12 text-center text-lg text-[var(--gray-text-color)] sm:text-left sm:text-xl">
-            Ready to transform your business processes? Our dedicated team at Halo is committed to
-            enhancing your operational efficiency through innovative AI technology. Don&aps;t
-            hesitate to reach out and discover how we can tailor solutions to meet your specific
-            needs.
+            {t('transformDesc')}
           </p>
           <div className="mb-12 flex items-center justify-center md:items-start md:justify-start">
             <Link
               href="/contact-us"
               className="items-center rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
             >
-              Contact Us Today
+              {t('btnContactUsToday')}
             </Link>
           </div>
         </div>
