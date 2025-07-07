@@ -21,7 +21,7 @@ export default function SectRevBusiness() {
             </p>
             <div className="mb-12 flex items-center justify-center lg:items-start lg:justify-start">
               <Link
-                href="/services"
+                href="#contact"
                 className="items-center rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
               >
                 {t('btnDiscoverOurSolutions')}
@@ -60,11 +60,7 @@ export default function SectRevBusiness() {
           </div>
           <div className="flex justify-center items-center w-full h-full lg:w-[55%] lg:pl-6">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="images/business-strategy.webp"
-              alt="Hero"
-              className="mt-8 max-h-[200px] lg:max-h-[500px] h-auto w-auto object-contain lg:mt-0"
-            />
+            <img src="images/business-automation.png" alt="Hero" className="h-auto w-full" />
           </div>
         </div>
       </div>

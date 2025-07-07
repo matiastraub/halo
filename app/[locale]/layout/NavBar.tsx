@@ -31,16 +31,19 @@ export default function NavBar() {
         >
           <ul className="flex flex-col lg:px-6 lg:flex-row flex-1 lg:justify-center lg:items-center lg:space-y-0 lg:space-x-8">
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <Link href="/about-us" className="text-[var(--dark-text-color)]">
+              <Link href="#aboutUs" className="text-[var(--dark-text-color)]">
                 {t('aboutUs')}
               </Link>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <Link href="/services" className="text-[var(--dark-text-color)]">
+              <Link href="#services" className="text-[var(--dark-text-color)]">
                 {t('services')}
               </Link>
             </li>
-            <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
+            <li
+              style={{ display: 'none' }}
+              className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0"
+            >
               <div className="group relative w-full">
                 <button
                   type="button"
