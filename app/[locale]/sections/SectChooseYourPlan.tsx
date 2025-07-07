@@ -31,6 +31,7 @@ const AllPlans = (props: AllListProps) => {
         items={choosePlanItems}
         mostPopular={i == 2 ? true : false}
         isWhite={i == 2 ? true : false}
+        mostPopularText={t('mostPopular')}
       />
     )
     choosePlanItems = []

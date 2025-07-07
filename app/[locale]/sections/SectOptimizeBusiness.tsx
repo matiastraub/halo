@@ -36,7 +36,7 @@ const AllItems = (props: AllItemsProps) => {
 export default function SectOptimizeBusiness() {
   const t = useTranslations('Home')
   return (
-    <section className="code-section" id="sf4f0q">
+    <section className="code-section" id="services">
       <div className="container mx-auto px-6 py-6 md:py-12">
         <div className="rounded-3xl bg-[var(--light-background-color)] px-4 py-8 md:py-40">
           <h2 className="mx-auto mb-4 max-w-4xl text-center text-3xl font-bold [font-family:var(--font-family-heading)] md:text-6xl">

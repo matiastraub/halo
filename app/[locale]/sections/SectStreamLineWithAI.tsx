@@ -36,7 +36,7 @@ const AllItems = (props: AllItemsProps) => {
 export default function SectStreamLineWithAi() {
   const t = useTranslations('Home')
   return (
-    <section className="py-20 code-section" id="services">
+    <section className="py-20 code-section" id="benefits">
       <div className="container mx-auto px-6">
         <h2 className="mb-6 text-center text-6xl font-bold [font-family:var(--font-family-heading)]">
           {t('streamLineBussinessWithAI')}

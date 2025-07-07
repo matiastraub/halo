@@ -36,7 +36,7 @@ export default function SectElevateYourBusiness() {
               </ul>
               <div className="flex justify-center lg:block">
                 <Link
-                  href="/services"
+                  href="#services"
                   className="mb-12 inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-medium text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
                 >
                   {t('btnStartYourTransformation')}

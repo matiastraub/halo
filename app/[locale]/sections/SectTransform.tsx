@@ -20,7 +20,7 @@ export default function SecTransform() {
           </p>
           <div className="mb-12 flex items-center justify-center md:items-start md:justify-start">
             <Link
-              href="/contact-us"
+              href="#contact"
               className="items-center rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
             >
               {t('btnContactUsToday')}

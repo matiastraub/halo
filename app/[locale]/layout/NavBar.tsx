@@ -40,6 +40,11 @@ export default function NavBar() {
                 {t('services')}
               </Link>
             </li>
+            <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
+              <Link href="#benefits" className="text-[var(--dark-text-color)]">
+                {t('benefits')}
+              </Link>
+            </li>
             <li
               style={{ display: 'none' }}
               className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0"
@@ -79,24 +84,31 @@ export default function NavBar() {
                 </div>
               </div>
             </li>
-            <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
+            <li
+              style={{ display: 'none' }}
+              className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0"
+            >
               <Link href="/careers" className="text-[var(--dark-text-color)]">
                 {t('careers')}
               </Link>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <Link href="/contact-us" className="text-[var(--dark-text-color)]">
+              <Link href="#contact" className="text-[var(--dark-text-color)]">
                 {t('contactUs')}
               </Link>
             </li>
           </ul>
           <div className="flex flex-col mt-4 lg:flex-row items-center space-y-4 lg:mt-0 lg:space-y-0 lg:space-x-4 text-sm lg:text-base">
-            <Link href="/login" className="px-4 py-2 text-[var(--dark-text-color)]">
-              {t('btnLogin')}
-            </Link>
             <Link
               href="/signup"
               className="rounded bg-[var(--primary-button-bg-color)] px-4 py-2 text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]"
+            >
+              {t('btnLogin')}
+            </Link>
+            <Link
+              style={{ visibility: 'hidden' }}
+              href="/login"
+              className="px-4 py-2 text-[var(--dark-text-color)]"
             >
               {t('btnSignUp')}
             </Link>
