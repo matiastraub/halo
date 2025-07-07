@@ -36,13 +36,14 @@ const PlanList = (props: {
   return <></>
 }
 
-const MostPopular = (props: { mostPopular: boolean }) => {
-  if (!props.mostPopular) {
+const MostPopular = (props: { mostPopular: boolean; mostPopularText: string }) => {
+  const { mostPopular, mostPopularText } = props
+  if (!mostPopular) {
     return <></>
   }
   return (
     <div className="absolute -top-6 left-1/4 mb-2 flex h-[54px] w-1/2 items-center justify-center rounded bg-black px-2 py-1 text-center text-xl font-semibold uppercase">
-      Most Popular
+      {mostPopularText}
     </div>
   )
 }
@@ -58,10 +59,12 @@ export default function Plan(props: {
   classTitle: string
   items: string[]
   mostPopular?: boolean
+  mostPopularText?: string
   isWhite?: boolean
 }) {
   const { title, text, price, subscription, link, cta, classMain, classTitle, items } = props
   const mostPopular = props.mostPopular || false
+  const mostPopularText = props.mostPopularText || ''
   const isWhite = props.isWhite || false
   const classText = isWhite
     ? 'mb-8 font-light xl:text-xl'
@@ -83,7 +86,7 @@ export default function Plan(props: {
     : 'mb-9 text-lg font-light uppercase text-[var(--dark-text-color)]'
   return (
     <div className={classMain}>
-      <MostPopular mostPopular={mostPopular} />
+      <MostPopular mostPopular={mostPopular} mostPopularText={mostPopularText} />
       <h4 className={classTitle}>{title}</h4>
       <p className={classText}>{text}</p>
       <p className={classPrice}>{price}</p>

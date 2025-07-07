@@ -73,7 +73,7 @@ export default function Footer() {
             <i className="fa-brands fa-linkedin-in" aria-hidden="true"></i>
           </Link>
         </div>
-        <p className="text-lg text-[var(--gray-text-color)]">© 2025 Halo All Rights Reserved</p>
+        <p className="text-lg text-[var(--gray-text-color)]">{t('copyright')}</p>
       </div>
     </footer>
   )

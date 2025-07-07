@@ -34,7 +34,7 @@ export default function SectAboutUs() {
             <h2 className="mb-4 text-center text-3xl font-bold [font-family:var(--font-family-heading)] lg:text-left lg:text-5xl">
               {t('aboutUsTitle')}
             </h2>
-            <p className="mb-6 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
+            <p className="mb-6 text-center text-xl text-[var(--dark-text-color)] lg:text-justify">
               {t('aboutUsDesc')}
             </p>
             <ul className="mb-12 list-disc pl-6 text-xl">
@@ -42,7 +42,7 @@ export default function SectAboutUs() {
             </ul>
             <div className="flex justify-center lg:block">
               <Link
-                href="/services"
+                href="#contact"
                 className="mb-12 inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-medium text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]"
               >
                 {t('btnExploreOurServices')}

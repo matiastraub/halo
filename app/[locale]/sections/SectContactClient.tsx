@@ -6,7 +6,7 @@ import { useState } from 'react'
 const ContactInfo = (props: { icon: string; title: string; content: string }) => {
   const { icon, title, content } = props
   return (
-    <div className="mb-6 flex items-start">
+    <div className="mb-2 flex items-start">
       <div className="mr-4 flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary-color)]">
         <i className={`${icon} text-white`} aria-hidden="true"></i>
       </div>

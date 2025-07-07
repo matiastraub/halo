@@ -27,8 +27,8 @@ export default function Home() {
               <SectAboutUs />
               <SectElevateYourBusiness />
               <SectOptimizeBusiness />
-              <SectChooseYourPlan />
               <SectUnlockFuture />
+              <SectChooseYourPlan />
               <SectContactClient />
               <ChatWidget />
             </div>

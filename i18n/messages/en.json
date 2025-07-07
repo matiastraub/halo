@@ -5,13 +5,15 @@
         "resources": "Resources",
         "careers": "Careers",
         "contactUs": "Contact Us",
+        "benefits": "Benefits",
         "blog": "Blog",
         "faq": "FAQ",
         "caseStudies": "Case Studies",
         "btnLogin": "Log In",
         "btnSignUp": "Sign Up",
         "privacyPolicy": "privacy Policy",
-        "termsConditions": "Terms & Conditions"
+        "termsConditions": "Terms & Conditions",
+        "copyright": "© 2025 Halo All Rights Reserved"
     },
     "Contact": {
         "contactTitle": "Contact",
@@ -99,6 +101,7 @@
         "optimizeBusinessStepDesc-2": "Customize AI-driven automation to align with your specific business needs, enhancing productivity and eliminating time-consuming tasks.",
         "optimizeBusinessStepTitle-3": "Collaborative Efficiency",
         "optimizeBusinessStepDesc-3": "facilitate real-time communication and document sharing, regardless of location.",
+        "mostPopular": "Most Popular",
         "choosePlanTitle": "Choose the Perfect AI Solution for Your Business",
         "choosePlanDesc": "Join the growing number of businesses transforming their operations with Halos intelligent automation.",
         "choosePlan-title-1": "Starter Plan",
