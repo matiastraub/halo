@@ -1,14 +1,14 @@
 import NavBar from './layout/NavBar'
 import SectRevBusiness from './sections/SectRevBusiness'
-import SectTransform from './sections/SectTransform'
 import SectStreamLineWithAI from './sections/SectStreamLineWithAI'
-import SectTransformWithPowerAI from './sections/SectTransformWithPowerAI'
 import SectElevateYourBusiness from './sections/SectElevateYourBusiness'
 import SectOptimizeBusiness from './sections/SectOptimizeBusiness'
 import SectChooseYourPlan from './sections/SectChooseYourPlan'
 import SectUnlockFuture from './sections/SectUnlockFuture'
 import Footer from './layout/Footer'
 import ChatWidget from '../components/ChatWidget'
+import SectAboutUs from './sections/SectAboutUs'
+import SectContactClient from './sections/SectContactClient'
 
 export default function Home() {
   return (
@@ -24,12 +24,12 @@ export default function Home() {
             <div>
               <SectRevBusiness />
               <SectStreamLineWithAI />
-              <SectTransformWithPowerAI />
+              <SectAboutUs />
               <SectElevateYourBusiness />
               <SectOptimizeBusiness />
               <SectChooseYourPlan />
               <SectUnlockFuture />
-              <SectTransform />
+              <SectContactClient />
               <ChatWidget />
             </div>
             <div>
