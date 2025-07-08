@@ -5,6 +5,8 @@ import '../globals.css'
 import '../main.css'
 import { getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
+import NavBar from './layout/NavBar'
+import Footer from './layout/Footer'
 
 type Props = Readonly<{
   children: React.ReactNode
@@ -39,7 +41,23 @@ export default async function RootLayout({ children, params }: Props) {
           strategy="afterInteractive"
         />
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+          <NextIntlClientProvider messages={messages}>
+            <div className="frame-root">
+              <div className="frame-content">
+                <div className="[font-family:var(--font-family-body)]">
+                  <div>
+                    <header className="relative z-50 code-section" id="global-header">
+                      <NavBar />
+                    </header>
+                  </div>
+                  {children}
+                  <div>
+                    <Footer />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </NextIntlClientProvider>
         </body>
       </html>
     )

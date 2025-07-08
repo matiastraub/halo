@@ -11,7 +11,7 @@ export default function NavBar() {
             className="text-[var(--primary-color)] [font-family:var(--font-family-heading)] lg:text-3xl"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="images/logo.avif" alt="Halo Logo" className="h-20" />
+            <img src="../images/logo.avif" alt="Halo Logo" className="h-20" />
           </Link>
         </div>
         <button
