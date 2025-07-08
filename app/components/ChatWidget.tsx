@@ -4,7 +4,7 @@ import { SendHorizonal } from 'lucide-react'
 
 export default function ChatWidget() {
   const [messages, setMessages] = useState([
-    { role: 'assistant', content: '¡Hola me llamo Carmen Luisa ! ¿En qué puedo ayudarte?' }
+    { role: 'assistant', content: '¡Hola me llamo Catalina ! ¿En qué puedo ayudarte?' }
   ])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
