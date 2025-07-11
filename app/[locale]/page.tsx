@@ -5,7 +5,7 @@ import SectOptimizeBusiness from './sections/SectOptimizeBusiness'
 import SectChooseYourPlan from './sections/SectChooseYourPlan'
 import SectUnlockFuture from './sections/SectUnlockFuture'
 
-import ChatWidget from '../components/ChatWidget'
+import ChatN8N from './sections/ChatN8N'
 import SectAboutUs from './sections/SectAboutUs'
 import SectContactClient from './sections/SectContactClient'
 
@@ -20,7 +20,7 @@ export default function Home() {
       <SectUnlockFuture />
       <SectChooseYourPlan />
       <SectContactClient />
-      <ChatWidget />
+      <ChatN8N />
     </div>
   )
 }
