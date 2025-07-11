@@ -29,8 +29,9 @@ export const metadata: Metadata = {
     'Impulsa tu negocio con agentes de IA, automatización inteligente, capacitación en TI y soluciones tecnológicas a tu medida.'
 }
 
-export default async function RootLayout({ children, params }: Props) {
-  const { locale } = params
+export default async function RootLayout(props: Props) {
+  const locale = props.params.locale
+
   const messages = await getMessages({ locale })
   if (locale)
     return (
@@ -41,7 +42,7 @@ export default async function RootLayout({ children, params }: Props) {
           strategy="afterInteractive"
         />
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider messages={messages} locale={locale}>
             <div className="frame-root">
               <div className="frame-content">
                 <div className="[font-family:var(--font-family-body)]">
@@ -50,7 +51,7 @@ export default async function RootLayout({ children, params }: Props) {
                       <NavBar />
                     </header>
                   </div>
-                  {children}
+                  {props.children}
                   <div>
                     <Footer />
                   </div>

@@ -22,18 +22,19 @@ export default function Footer() {
             Home
           </Link>
           <Link
-            href="/about-us"
+            href="#aboutUs"
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
             {t('aboutUs')}
           </Link>
           <Link
-            href="/services"
+            href="#services"
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
             {t('services')}
           </Link>
           <Link
+            style={{ display: 'none' }}
             href="/blog"
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
@@ -46,7 +47,7 @@ export default function Footer() {
             {t('privacyPolicy')}
           </Link>
           <Link
-            href="/"
+            href="/terms-and-conditions"
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
             {t('termsConditions')}
