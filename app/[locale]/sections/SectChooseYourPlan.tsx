@@ -39,8 +39,10 @@ const AllPlans = (props: AllListProps) => {
   return arr
 }
 
-export default function SectChooseYourPlan() {
+export default function SectChooseYourPlan(props: { visible?: boolean }) {
   const t = useTranslations('Home')
+  const { visible } = props
+  if (!visible) return
 
   return (
     <section className="code-section" id="sohjzr">

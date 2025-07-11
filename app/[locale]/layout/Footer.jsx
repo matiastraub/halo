@@ -54,7 +54,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="mb-8">
+        <div className="mb-8" style={{ display: 'none' }}>
           <Link
             href="/"
             className="mx-2 text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"

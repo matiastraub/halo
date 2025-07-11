@@ -175,9 +175,12 @@ const ContactForm = (props: { t: (key: string) => string }) => {
   )
 }
 
-export default function SectContact() {
+export default function SectContact(props: { visible?: boolean }) {
+  const { visible } = props
   const t = useTranslations('Contact')
-
+  if (!visible) {
+    return
+  }
   return (
     <section className="code-section" id="contact">
       <div className="container mx-auto px-6 lg:pt-24">

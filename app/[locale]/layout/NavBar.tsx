@@ -100,7 +100,8 @@ export default function NavBar() {
           </ul>
           <div className="flex flex-col mt-4 lg:flex-row items-center space-y-4 lg:mt-0 lg:space-y-0 lg:space-x-4 text-sm lg:text-base">
             <Link
-              href="/signup"
+              style={{ visibility: 'hidden' }}
+              href="/dashboard"
               className="rounded bg-[var(--primary-button-bg-color)] px-4 py-2 text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]"
             >
               {t('btnLogin')}
