@@ -54,9 +54,10 @@ const AllBlogCards = (props: AllBlogCardsProps) => {
   return arr
 }
 
-export default function SectUnlockFuture() {
+export default function SectUnlockFuture(props: { visible?: boolean }) {
   const t = useTranslations('Home')
-
+  const { visible } = props
+  if (!visible) return
   return (
     <section className="code-section" id="suhrv6r">
       <div className="container mx-auto px-4 py-12">
