@@ -19,7 +19,7 @@ export default function Home() {
       <SectOptimizeBusiness />
       <SectUnlockFuture visible={false} />
       <SectChooseYourPlan visible={false} />
-      <SectContactClient visible={false} />
+      <SectContactClient visible={true} />
       <ChatN8N />
     </div>
   )

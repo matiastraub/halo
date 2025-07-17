@@ -107,7 +107,16 @@
         "contactFormCategory-3": "Internal Assistant (Team Productivity)",
         "contactFormCategory-4": "CRM / ERP Integration Agent",
         "contactFormCategory-5": "Other Consultation",
-        "btnSendMessage": "Send Message"
+        "btnSendMessage": "Send Message",
+        "errorNameRequired": "Name is required",
+        "errorEmailRequired": "Email is required",
+        "errorEmailInvalid": "Please enter a valid email address",
+        "errorCategoryRequired": "Please select a category",
+        "errorMessageRequired": "Message is required",
+        "errorMessageTooShort": "Message must be at least 10 characters long",
+        "successMessageSent": "Your message has been sent successfully! We'll get back to you soon.",
+        "errorMessageNotSent": "Failed to send message. Please try again later.",
+        "btnSending": "Sending..."
     },
     "AboutUs": {
         "aboutUsTitle": "¿Quiénes somos?",
