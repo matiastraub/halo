@@ -120,7 +120,16 @@
         "contactFormCategory-3": "Asistente interno (Productividad del equipo)",
         "contactFormCategory-4": "Agente de integración CRM/ERP",
         "contactFormCategory-5": "Otras consultas",
-        "btnSendMessage": "Enviar"
+        "btnSendMessage": "Enviar",
+        "errorNameRequired": "Nombre obligatorio",
+        "errorEmailRequired": "Correo electrónico obligatorio",
+        "errorEmailInvalid": "Introduzca una dirección de correo electrónico válida",
+        "errorCategoryRequired": "Seleccione una categoría",
+        "errorMessageRequired": "Mensaje obligatorio",
+        "errorMessageTooShort": "El mensaje debe tener al menos 10 caracteres",
+        "successMessageSent": "¡Su mensaje se ha enviado correctamente! Nos pondremos en contacto con usted pronto.",
+        "errorMessageNotSent": "Error al enviar el mensaje. Inténtelo de nuevo más tarde.",
+        "btnSending": "Enviando..."
     },
     "Home": {
         "analyticDashboard": "Panel de análisis",
