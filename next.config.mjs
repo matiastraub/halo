@@ -5,9 +5,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    reactStrictMode: false
-  },
+  reactStrictMode: false,
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve(process.cwd(), 'src')
     return config
