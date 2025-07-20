@@ -26,7 +26,9 @@ export default function SectElevateYourBusiness() {
           <div className="flex flex-col-reverse items-stretch lg:flex-row">
             <div className="lg:w-1/2 lg:pr-20">
               <h2 className="mb-4 text-center text-3xl font-bold [font-family:var(--font-family-heading)] sm:text-5xl lg:text-left">
-                {t('elevateYourBusinessTitle')}
+                {t.rich('elevateYourBusinessTitle', {
+                  span: (chunks) => <span>{chunks}</span>
+                })}
               </h2>
               <p className="mb-6 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
                 {t('elevateYourBusinessDesc')}
@@ -42,7 +44,7 @@ export default function SectElevateYourBusiness() {
                   {t('btnStartYourTransformation')}
                 </Link>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center testimonials" style={{ display: 'none' }}>
                 <img
                   src="images/testimonial03.jpg"
                   alt="Client Testimonial"
@@ -74,7 +76,7 @@ export default function SectElevateYourBusiness() {
             <div className="mb-4 flex flex-1 items-center justify-center rounded-[var(--button-rounded-radius)] bg-[var(--light-background-color)] p-6 lg:w-1/2">
               <img
                 className="mx-auto rounded-[var(--button-rounded-radius)]"
-                src="images/elevate-business.webp"
+                src="images/phone-sqr.jpg"
                 alt="Hero"
               />
             </div>

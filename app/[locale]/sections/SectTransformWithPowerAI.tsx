@@ -26,7 +26,7 @@ export default function SectTransformWithPowerAI() {
           <div className="flex flex-1 items-center justify-center rounded-3xl bg-[var(--light-background-color)] p-6 lg:w-1/2">
             <img
               className="mx-auto rounded-3xl"
-              src="images/artificial-intelligence.webp"
+              src="images/images/hero-illustration.png"
               alt="Hero"
             />
           </div>

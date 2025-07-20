@@ -12,7 +12,7 @@ const ContactInfo = (props: { icon: string; title: string; content: string }) =>
       </div>
       <div>
         <span className="mb-2 text-lg font-semibold text-[var(--dark-text-color)]">{title}</span>
-        <span className="text-[var(--dark-text-color)]">{content}</span>
+        <span className="text-[var(--dark-text-color)]"> {content}</span>
       </div>
     </div>
   )
@@ -27,13 +27,13 @@ const AllContactInfo = (props: AllContactInfoProps) => {
       icon: 'fa-solid fa-envelope',
       title: t('contactEmailTitle'),
       content: t('contactEmailContent'),
-      display: false
+      display: true
     },
     {
       icon: 'fa-solid fa-phone',
       title: t('contactPhoneTitle'),
       content: t('contactPhoneContent'),
-      display: false
+      display: true
     },
     {
       icon: 'fa-solid fa-map-marker-alt',
@@ -310,7 +310,7 @@ const ContactForm = (props: { t: (key: string) => string }) => {
           <label
             htmlFor="message"
             className="block text-sm font-medium text-[var(--dark-text-color)] mb-2"
-            style={{ display: 'none' }}
+            style={{ display: 'auto' }}
           >
             {t('contactFormMessage')}
           </label>
@@ -366,15 +366,13 @@ export default function SectContact(props: { visible?: boolean }) {
       <div className="container mx-auto px-6 lg:pt-24">
         <div className="flex flex-col items-stretch lg:flex-row">
           <div className="flex flex-1 items-center justify-center rounded-3xl bg-[var(--light-background-color)] p-6 lg:w-1/2">
-            <img
-              className="mx-auto rounded-3xl"
-              src="images/business-strategy.webp"
-              alt="Contact Us"
-            />
+            <img className="mx-auto rounded-3xl" src="images/contactUs.png" alt="Contact Us" />
           </div>
-          <div className="pt-8 lg:w-1/2 lg:pl-20 lg:pr-12 lg:pt-0">
+          <div className="pt-8 lg:w-1/2 lg:pl-20 lg:pr-12 lg:pt-10">
             <h2 className="mb-4 text-center text-3xl font-bold [font-family:var(--font-family-heading)] lg:text-left lg:text-5xl">
-              {t('contactTitle')}
+              {t.rich('contactTitle', {
+                span: (chunks) => <span>{chunks}</span>
+              })}
             </h2>
             <p className="mb-6 text-center text-xl text-[var(--dark-text-color)] lg:text-left">
               {t('contactDesc')}

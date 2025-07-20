@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Halo - IA que Ilumina tu Flujo de Trabajo',
+  title: 'Halo - Un aura de IA responsable',
   description:
     'Impulsa tu negocio con agentes de IA, automatización inteligente, capacitación en TI y soluciones tecnológicas a tu medida.'
 }

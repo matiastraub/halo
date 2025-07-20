@@ -87,7 +87,7 @@
         "contactTitle": "Contact",
         "contactDesc": "We are glad to hear from you",
         "contactEmailTitle": "Email",
-        "contactEmailContent": "info@halo.cl",
+        "contactEmailContent": "contacto@halo.cl",
         "contactPhoneTitle": "Phone",
         "contactPhoneContent": "+56 9 5634 3596",
         "contactAddressTitle": "Address",
@@ -119,7 +119,7 @@
         "btnSending": "Sending..."
     },
     "AboutUs": {
-        "aboutUsTitle": "¿Quiénes somos?",
+        "aboutUsTitle": "¿Quiénes <span>somos?</span>",
         "aboutUsDesc": "Soy Matías Traub, Ingeniero y CEO de Halo. Con más de 20 años de experiencia en el sector de TI, he liderado iniciativas de transformación digital en Canadá y ahora traigo mi experiencia y equipo internacional a Chile en mejora de procesos de negocio, implementación de ERP y el desarrollo de agentes de IA inteligentes que redefinen la eficiencia operativa.",
         "aboutUsList-1": "Más de 20 años de experiencia práctica en la mejora de flujos de trabajo y operaciones empresariales.",
         "aboutUsList-2": "Historial comprobado de implementaciones exitosas de ERP en diversas industrias.",
