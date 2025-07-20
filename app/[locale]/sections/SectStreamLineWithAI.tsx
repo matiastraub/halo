@@ -6,7 +6,7 @@ const Item = (props: ItemProps) => {
   const { number, title, desc } = props
   return (
     <div className="flex-1 rounded-3xl bg-[#ffffff] p-8 text-center shadow-lg shadow-[#ccc] md:max-w-xs md:p-12">
-      <div className="mx-auto mb-12 flex h-20 w-20 items-center justify-center rounded-full bg-[var(--light-background-color)] text-4xl">
+      <div className="mx-auto mb-12 flex h-20 w-20 items-center justify-center rounded-full bg-[var(--light-border-color)] text-4xl">
         <span className="text-[var(--primary-color)]">{number}</span>
       </div>
       <h4 className="mb-2 text-2xl font-semibold">{title}</h4>
@@ -39,7 +39,9 @@ export default function SectStreamLineWithAi() {
     <section className="py-20 code-section" id="benefits">
       <div className="container mx-auto px-6">
         <h2 className="mb-6 text-center text-6xl font-bold [font-family:var(--font-family-heading)]">
-          {t('streamLineBussinessWithAI')}
+          {t.rich('streamLineBussinessWithAI', {
+            span: (chunks) => <span>{chunks}</span>
+          })}
         </h2>
         <h3 className="mb-12 text-center text-xl text-[var(--gray-text-color)]">
           {t('unlockFullPotentials')}

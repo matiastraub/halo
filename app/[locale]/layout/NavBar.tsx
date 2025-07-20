@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 export default function NavBar() {
   const t = useTranslations('Nav')
   return (
-    <nav className="container mx-auto py-10">
+    <nav className="container mx-auto py-6">
       <div className="flex items-center justify-between relative">
         <div className="pl-6 text-xl font-bold">
           <Link
@@ -11,7 +11,7 @@ export default function NavBar() {
             className="text-[var(--primary-color)] [font-family:var(--font-family-heading)] lg:text-3xl"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="../images/logo.avif" alt="Halo Logo" className="h-20" />
+            <img src="../images/logo.png" alt="Halo Logo" className="h-30" />
           </Link>
         </div>
         <button
@@ -98,7 +98,10 @@ export default function NavBar() {
               </Link>
             </li>
           </ul>
-          <div className="flex flex-col mt-4 lg:flex-row items-center space-y-4 lg:mt-0 lg:space-y-0 lg:space-x-4 text-sm lg:text-base">
+          <div
+            className="flex flex-col mt-4 lg:flex-row items-center space-y-4 lg:mt-0 lg:space-y-0 lg:space-x-4 text-sm lg:text-base"
+            style={{ display: 'none' }}
+          >
             <Link
               style={{ visibility: 'hidden' }}
               href="/dashboard"

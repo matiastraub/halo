@@ -11,7 +11,7 @@ type AllListProps = { t: (key: string) => string }
 const AllList = (props: AllListProps) => {
   const { t } = props
   const lst = []
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 2; i <= 4; i++) {
     lst.push(<List key={`about-list-${i}`} text={t(`aboutUsList-${i}`)} />)
   }
   return lst
@@ -24,15 +24,13 @@ export default function SectAboutUs() {
       <div className="container mx-auto px-6 lg:pt-24">
         <div className="flex flex-col items-stretch lg:flex-row">
           <div className="flex flex-1 items-center justify-center rounded-3xl bg-[var(--light-background-color)] p-6 lg:w-1/2">
-            <img
-              className="mx-auto rounded-3xl"
-              src="images/artificial-intelligence.webp"
-              alt="Hero"
-            />
+            <img className="mx-auto rounded-3xl" src="images/hero-illustration.png" alt="Hero" />
           </div>
           <div className="pt-8 lg:w-1/2 lg:pl-20 lg:pr-12 lg:pt-0">
             <h2 className="mb-4 text-center text-3xl font-bold [font-family:var(--font-family-heading)] lg:text-left lg:text-5xl">
-              {t('aboutUsTitle')}
+              {t.rich('aboutUsTitle', {
+                span: (chunks) => <span>{chunks}</span>
+              })}
             </h2>
             <p className="mb-6 text-center text-xl text-[var(--dark-text-color)] lg:text-justify">
               {t('aboutUsDesc')}
