@@ -22,6 +22,7 @@ export default function NavBar() {
           aria-controls="navigation-menu"
           aria-expanded="false"
           aria-label="Navigation Menu"
+          style={{ display: 'none' }}
         >
           <i className="fa-regular fa-bars feather feather-menu" aria-hidden="true"></i>
         </button>
