@@ -29,7 +29,7 @@ export default function SectRevBusiness() {
                 {t('btnDiscoverOurSolutions')}
               </Link>
             </div>
-            <div className="flex items-center pb-10">
+            <div className="flex items-center pb-10" style={{ display: 'none' }}>
               <Image
                 src="/images/Emily.jpg"
                 alt="Satisfied Client"
