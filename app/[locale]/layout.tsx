@@ -30,17 +30,39 @@ export const metadata: Metadata = {
 }
 
 export default async function RootLayout(props: Props) {
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+
   const locale = props.params.locale
 
   const messages = await getMessages({ locale })
   if (locale)
     return (
       <html lang={locale} className="h-full bg-white">
-        <Script
-          src="https://kit.fontawesome.com/8e98006f77.js"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        <head>
+          <Script
+            src="https://kit.fontawesome.com/8e98006f77.js"
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+          {GA_ID && (
+            <>
+              <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+                strategy="afterInteractive"
+              />
+              <Script id="ga-init" strategy="afterInteractive">
+                {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `}
+              </Script>
+            </>
+          )}
+        </head>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <NextIntlClientProvider messages={messages} locale={locale}>
             <div className="frame-root">
