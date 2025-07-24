@@ -83,6 +83,19 @@
         "text-10-address-label": "Address:",
         "text-10-address": " Avda. Acacias 22, Santiago, Chile"
     },
+    "AboutUs": {
+        "aboutUsTitle": "¿Quiénes <span>somos?</span>",
+        "aboutUsDesc": "Soy Matías Traub, Ingeniero y CEO de Halo. Con más de 20 años de experiencia en el sector de TI, he liderado iniciativas de transformación digital en Canadá y ahora traigo mi experiencia y equipo internacional a Chile en mejora de procesos de negocio, implementación de ERP y el desarrollo de agentes de IA inteligentes que redefinen la eficiencia operativa.",
+        "aboutUsList-1": "Más de 20 años de experiencia práctica en la mejora de flujos de trabajo y operaciones empresariales.",
+        "aboutUsList-2": "Historial comprobado de implementaciones exitosas de ERP en diversas industrias.",
+        "aboutUsList-3": "Experiencia en automatización impulsada por IA adaptada a las necesidades únicas de su negocio.",
+        "aboutUsList-4": "Ahora en Chile, acercando servicios de consultoría y desarrollo de primer nivel.",
+        "monitorBusinessPerformance": "Supervise el rendimiento de su negocio y las métricas clave",
+        "btnExploreOurServices": "Explore Our Services!",
+        "testimonialsText-2": "Halo's AI tools have revolutionized our daily operations, making them smoother and more efficient!",
+        "testimonialsName-2": "Diana Ospina",
+        "testimonialsTitle-2": "(CEO at Content Auto)"
+    },
     "Contact": {
         "contactTitle": "Contact",
         "contactDesc": "We are glad to hear from you",
@@ -118,18 +131,22 @@
         "errorMessageNotSent": "Failed to send message. Please try again later.",
         "btnSending": "Sending..."
     },
-    "AboutUs": {
-        "aboutUsTitle": "¿Quiénes <span>somos?</span>",
-        "aboutUsDesc": "Soy Matías Traub, Ingeniero y CEO de Halo. Con más de 20 años de experiencia en el sector de TI, he liderado iniciativas de transformación digital en Canadá y ahora traigo mi experiencia y equipo internacional a Chile en mejora de procesos de negocio, implementación de ERP y el desarrollo de agentes de IA inteligentes que redefinen la eficiencia operativa.",
-        "aboutUsList-1": "Más de 20 años de experiencia práctica en la mejora de flujos de trabajo y operaciones empresariales.",
-        "aboutUsList-2": "Historial comprobado de implementaciones exitosas de ERP en diversas industrias.",
-        "aboutUsList-3": "Experiencia en automatización impulsada por IA adaptada a las necesidades únicas de su negocio.",
-        "aboutUsList-4": "Ahora en Chile, acercando servicios de consultoría y desarrollo de primer nivel.",
-        "monitorBusinessPerformance": "Supervise el rendimiento de su negocio y las métricas clave",
-        "btnExploreOurServices": "Explore Our Services!",
-        "testimonialsText-2": "Halo's AI tools have revolutionized our daily operations, making them smoother and more efficient!",
-        "testimonialsName-2": "Diana Ospina",
-        "testimonialsTitle-2": "(CEO at Content Auto)"
+    "EntregarClave": {
+        "title": "Entregar Clave",
+        "desc": "Si necesitas entregar una clave de acceso o información confidencial, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.",
+        "contactFormName": "Nombre",
+        "contactFormNamePlaceholder": "Nombre",
+        "contactFormEmail": "Email",
+        "contactFormEmailPlaceholder": "Email",
+        "contactFormSubject": "Asunto",
+        "contactFormSubjectPlaceholder": "Asunto",
+        "contactFormMessage": "Mensaje",
+        "contactFormMessagePlaceholder": "Mensaje",
+        "contactFormCategory": "Elige una opción",
+        "contactFormCategoryPlaceholder": "Elige una opción",
+        "contactFormCategory-1": "Chatbot (Web o WhatsApp)",
+        "contactFormCategory-2": "Agente de voz (Automatización de llamadas)",
+        "contactFormDesc": "Si necesitas entregar una clave de acceso o información confidencial, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible."
     },
     "Home": {
         "monitorBusinessPerformance": "Monitor your business performance and key metrics",
@@ -244,5 +261,34 @@
         "transformTitle": "Experience Seamless Efficiency with Halo's AI Solutions",
         "transformDesc": "Ready to transform your business processes? Our dedicated team at Halo is committed to enhancing your operational efficiency through innovative AI technology. Don't hesitate to reach out and discover how we can tailor solutions to meet your specific needs.",
         "btnContactUsToday": "Contact Us Today"
+    },
+    "Unsubscribe": {
+        "title": "Unsubscribe",
+        "desc": "We are so sorry to see you go! If you wish to unsubscribe from our mailing list, please click the link below.",
+        "btnUnsubscribe": "Unsubscribe",
+        "successMessage": "You have successfully unsubscribed from our mailing list.",
+        "UnsubscribeFormEmail": "Email",
+        "UnsubscribeFormEmailPlaceholder": "Enter your email address",
+        "UnsubscribeFormReason": "Reason for Unsubscribing",
+        "UnsubscribeFormReasonPlaceholder": "Select a reason",
+        "UnsubscribeFormReason-1": "Too many emails",
+        "UnsubscribeFormReason-2": "Not relevant to me",
+        "UnsubscribeFormReason-3": "Content not useful",
+        "UnsubscribeFormReason-4": "Prefer other sources",
+        "UnsubscribeFormReason-5": "Other",
+        "UnsubscribeFormMessage": "Additional Comments (optional)",
+        "UnsubscribeFormMessagePlaceholder": "Enter any additional comments or feedback",
+        "UnsubscribeFormSubmit": "Submit",
+        "UnsubscribeFormSuccessMessage": "Your unsubscription request has been processed successfully. You will no longer receive emails from us.",
+        "UnsubscribeFormErrorMessage": "There was an error processing your unsubscription request. Please try again later.",
+        "btnSendMessage": "Send Message",
+        "btnSending": "Sending...",
+        "errorEmailRequired": "Email is required",
+        "errorEmailInvalid": "Please enter a valid email address",
+        "successMessageSent": "Your message has been sent successfully! We'll get back to you soon.",
+        "errorMessageNotSent": "Failed to send message. Please try again later.",
+        "errorReasonRequired": "Please select a reason",
+        "errorMessageRequired": "Message is required",
+        "errorMessageTooShort": "Message must be at least 10 characters long"
     }
 }
