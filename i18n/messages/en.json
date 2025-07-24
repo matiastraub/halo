@@ -289,6 +289,7 @@
         "errorMessageNotSent": "Failed to send message. Please try again later.",
         "errorReasonRequired": "Please select a reason",
         "errorMessageRequired": "Message is required",
-        "errorMessageTooShort": "Message must be at least 10 characters long"
+        "errorMessageTooShort": "Message must be at least 10 characters long",
+        "missingEmail": "Missing email address. Please provide your email to unsubscribe."
     }
 }

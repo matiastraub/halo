@@ -1,11 +1,21 @@
-//import Link from 'next/link'
-
+'use client'
+import { useSearchParams } from 'next/navigation'
 import UnsubscribeForm from 'app/components/halo/UnsubscribeForm'
 import { useTranslations } from 'next-intl'
 
-export default function TermsAndConditions(props: { params: { email: string } }) {
-  const email = decodeURIComponent(props.params.email)
+export default function Unsubscribe() {
+  const searchParams = useSearchParams()
+  const email = searchParams.get('email') ?? ''
   const t = useTranslations('Unsubscribe')
+
+  if (!email) {
+    return (
+      <div className="container mx-auto px-6 py-20">
+        <h1 className="text-center text-3xl font-bold"> {t('title')}</h1>
+        <p className="text-center text-lg mt-4">{t('missingEmail')}</p>
+      </div>
+    )
+  }
 
   console.log('email: ', email)
 
