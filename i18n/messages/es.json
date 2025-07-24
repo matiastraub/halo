@@ -131,6 +131,23 @@
         "errorMessageNotSent": "Error al enviar el mensaje. Inténtelo de nuevo más tarde.",
         "btnSending": "Enviando..."
     },
+    "EntregarClave": {
+        "title": "Entregar Clave",
+        "desc": "Si necesitas entregar una clave de acceso o información confidencial, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.",
+        "contactFormName": "Nombre",
+        "contactFormNamePlaceholder": "Nombre",
+        "contactFormEmail": "Email",
+        "contactFormEmailPlaceholder": "Email",
+        "contactFormSubject": "Asunto",
+        "contactFormSubjectPlaceholder": "Asunto",
+        "contactFormMessage": "Mensaje",
+        "contactFormMessagePlaceholder": "Mensaje",
+        "contactFormCategory": "Elige una opción",
+        "contactFormCategoryPlaceholder": "Elige una opción",
+        "contactFormCategory-1": "Chatbot (Web o WhatsApp)",
+        "contactFormCategory-2": "Agente de voz (Automatización de llamadas)",
+        "contactFormDesc": "Si necesitas entregar una clave de acceso o información confidencial, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible."
+    },
     "Home": {
         "analyticDashboard": "Panel de análisis",
         "revolutionizeBusinessProcesses": "Revoluciona tus <span>procesos  con IA</span>",
@@ -250,5 +267,33 @@
         "transformTitle": "Experimente una eficiencia sin interrupciones con las soluciones de IA de Halo",
         "transformDesc": "¿Listo para transformar sus procesos de negocio? Nuestro equipo dedicado en Halo se compromete a mejorar su eficiencia operativa mediante tecnología de IA innovadora. No dude en contactarnos y descubra cómo podemos adaptar las soluciones a sus necesidades específicas.",
         "btnContactUsToday": "Contáctenos hoy mismo"
+    },
+    "Unsubscribe": {
+        "title": "Darse de baja",
+        "desc": "Lamentamos verte partir. Si deseas darte de baja de nuestra lista de correo, haz clic en el botón enviar mensaje.",
+        "btnUnsubscribe": "Darse de baja",
+        "successMessage": "Te has dado de baja de nuestra lista de correo.",
+        "UnsubscribeFormEmail": "Email",
+        "UnsubscribeFormEmailPlaceholder": "Dirección de correo electrónico",
+        "UnsubscribeFormReason": "Motivo de la baja",
+        "UnsubscribeFormReasonPlaceholder": "Selecciona un motivo",
+        "UnsubscribeFormReason-1": "Demasiados correos electrónicos",
+        "UnsubscribeFormReason-2": "No es relevante para mí",
+        "UnsubscribeFormReason-3": "Contenido no útil",
+        "UnsubscribeFormReason-4": "Prefiero otras fuentes",
+        "UnsubscribeFormReason-5": "Otro",
+        "UnsubscribeFormMessage": "Comentarios adicionales (opcional)",
+        "UnsubscribeFormMessagePlaceholder": "Ingresa cualquier comentario o sugerencia adicional",
+        "UnsubscribeFormSubmit": "Enviar",
+        "UnsubscribeFormSuccessMessage": "Tu solicitud de baja ha sido procesada con éxito. Ya no recibirás correos electrónicos de nuestra parte.",
+        "UnsubscribeFormErrorMessage": "Hubo un error al procesar tu solicitud de baja. Por favor, inténtalo de nuevo más tarde.",
+        "btnSendMessage": "Enviar mensaje",
+        "btnSending": "Enviando...",
+        "errorEmailRequired": "Se requiere correo electrónico",
+        "errorEmailInvalid": "Por favor, ingresa una dirección de correo electrónico válida",
+        "errorMessageNotSent": "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
+        "errorReasonRequired": "Por favor, selecciona un motivo",
+        "errorMessageRequired": "Se requiere un mensaje",
+        "errorMessageTooShort": "El mensaje debe tener al menos 10 caracteres"
     }
 }
