@@ -2,6 +2,8 @@
 'use client'
 import { useEffect } from 'react'
 import '@n8n/chat/style.css'
+import '../../main.css'
+
 import { createChat } from '@n8n/chat'
 
 export default function ChatN8N() {
@@ -12,7 +14,7 @@ export default function ChatN8N() {
       target: '#n8n-chat',
       chatInputKey: 'chatInput',
       loadPreviousSession: true,
-      initialMessages: ['¡Hola! 👋', 'Mi nombre es Catalina. Estoy aquí para ayudarte'],
+      initialMessages: ['¡Hola! 👋 Mi nombre es Alicia. Estoy aquí para ayudarte'],
       i18n: {
         en: {
           title: 'Hola de Halo👋',
