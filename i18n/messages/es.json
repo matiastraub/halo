@@ -294,6 +294,7 @@
         "errorMessageNotSent": "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
         "errorReasonRequired": "Por favor, selecciona un motivo",
         "errorMessageRequired": "Se requiere un mensaje",
-        "errorMessageTooShort": "El mensaje debe tener al menos 10 caracteres"
+        "errorMessageTooShort": "El mensaje debe tener al menos 10 caracteres",
+        "missingEmail": "Se requiere dirección de correo electrónico. Por favor, proporciona tu correo electrónico para darte de baja."
     }
 }
