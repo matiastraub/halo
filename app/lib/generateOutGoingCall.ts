@@ -1,25 +1,29 @@
 import path from 'path'
 import fs from 'fs/promises'
+import fsSync from 'fs'
 import { NextRequest, NextResponse } from 'next/server'
 import matter from 'gray-matter'
+import { CallConfig } from 'app/types/callConfig'
 import axios from 'axios'
 import twilio from 'twilio'
-import type { CallConfig } from '../../types/callConfig.js'
 
 export async function generateOutgoingCall(req: NextRequest, promptName: string) {
   if (!promptName) {
     return NextResponse.json({ error: 'Missing promptName parameter' }, { status: 400 })
   }
-
-  const mdPath = path.resolve(`./prompts/${promptName}.md`)
-
+  const mdPath = path.join(process.cwd(), 'app', 'prompts', `${promptName}.md`)
+  if (!fsSync.existsSync(mdPath)) {
+    return NextResponse.json({ error: `Prompt file not found: ${promptName}` }, { status: 404 })
+  }
   const fileContent = await fs.readFile(mdPath, 'utf-8')
+  if (!fileContent) {
+    return NextResponse.json({ error: `Prompt file is empty: ${promptName}` }, { status: 400 })
+  }
   const parsed = matter(fileContent)
-
   const prompt = parsed.content // Markdown body
-
   try {
-    const body = await req.json()
+    const body = req.body ? await req.json() : {}
+
     const { model, voice, temperature, phone } = body
 
     const {
@@ -33,7 +37,6 @@ export async function generateOutgoingCall(req: NextRequest, promptName: string)
     } = process.env
 
     const callConfig: CallConfig = {
-      //systemPrompt: prompt.default,
       systemPrompt: prompt,
       model: model || ULTRAVOX_MODEL,
       voice: voice || ULTRAVOX_VOICE,
@@ -42,8 +45,7 @@ export async function generateOutgoingCall(req: NextRequest, promptName: string)
       medium: { twilio: {} }
     }
     const ultravoxResponse = await createUltravoxCall(callConfig)
-    console.log('ultravoxResponse:', ultravoxResponse)
-    //res.json(ultravoxResponse)
+
     if (!ultravoxResponse.joinUrl) {
       throw new Error('No joinUrl received from Ultravox API')
     }

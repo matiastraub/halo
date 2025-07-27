@@ -1,8 +1,8 @@
-type TwilioConfig = {}
-type TelnyxConfig = {}
-type PlivoConfig = {}
-type JambonzConfig = {}
-type VoxImplantConfig = {}
+type TwilioConfig = object
+type TelnyxConfig = object
+type PlivoConfig = object
+type JambonzConfig = object
+type VoxImplantConfig = object
 
 type MediumMap = {
   twilio: TwilioConfig
