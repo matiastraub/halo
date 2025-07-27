@@ -326,7 +326,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
         return (
           <select
             {...commonProps}
-            value={formData[field.name] || ''}
+            value={formData[field.name] as string | number | undefined}
             className={`${baseInputClasses} bg-white`}
           >
             {field.placeholder && <option value="">{field.placeholder}</option>}
@@ -342,7 +342,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
         return (
           <textarea
             {...commonProps}
-            value={formData[field.name] || ''}
+            value={formData[field.name] as string | number | undefined}
             placeholder={field.placeholder}
             rows={field.rows || 4}
             minLength={field.minLength}
@@ -398,7 +398,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
           <input
             {...commonProps}
             type={field.type}
-            value={formData[field.name] || ''}
+            value={formData[field.name] as string | number | undefined}
             placeholder={field.placeholder}
             min={field.min}
             max={field.max}
