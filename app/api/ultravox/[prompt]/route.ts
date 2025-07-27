@@ -1,11 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { generateOutgoingCall } from '../../../lib/generateOutGoingCall'
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   try {
-    const { searchParams } = req.nextUrl
-    const someParam = searchParams.get('q') || ''
-
     const ultravoxApiUrl = process.env.ULTRAVOX_API_URL
     const apiKey = process.env.ULTRAVOX_X_API_KEY
 
@@ -15,7 +12,7 @@ export async function GET(req: NextRequest) {
       )
     }
 
-    const res = await fetch(`${ultravoxApiUrl}?q=${encodeURIComponent(someParam)}`, {
+    const res = await fetch(`${ultravoxApiUrl}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
