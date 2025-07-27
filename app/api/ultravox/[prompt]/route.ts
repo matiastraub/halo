@@ -31,14 +31,9 @@ export async function GET(req: NextRequest) {
   }
 }
 
-export async function POST(req: NextRequest, { params }: { params: { prompt: string } }) {
+export async function POST(req: NextRequest) {
   try {
-    const promptName = (await params.prompt) || ''
-
-    if (!promptName) {
-      return NextResponse.json({ error: 'Missing promptName parameter' }, { status: 400 })
-    }
-    return await generateOutgoingCall(req, promptName || '')
+    return await generateOutgoingCall(req)
   } catch (error: unknown) {
     const errorMessage =
       typeof error === 'object' && error !== null && 'message' in error

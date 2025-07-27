@@ -7,7 +7,11 @@ import { CallConfig } from 'app/types/callConfig'
 import axios from 'axios'
 import twilio from 'twilio'
 
-export async function generateOutgoingCall(req: NextRequest, promptName: string) {
+export async function generateOutgoingCall(req: NextRequest) {
+  const body = req.body ? await req.json() : {}
+
+  const { model, voice, temperature, phone, promptName } = body
+
   if (!promptName) {
     return NextResponse.json({ error: 'Missing promptName parameter' }, { status: 400 })
   }
@@ -22,10 +26,6 @@ export async function generateOutgoingCall(req: NextRequest, promptName: string)
   const parsed = matter(fileContent)
   const prompt = parsed.content // Markdown body
   try {
-    const body = req.body ? await req.json() : {}
-
-    const { model, voice, temperature, phone } = body
-
     const {
       TWILIO_ACCOUNT_SID,
       TWILIO_AUTH_TOKEN,
