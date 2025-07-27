@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
+  allowedDevOrigins: ['https://www.halo.cl'],
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve(process.cwd(), 'src')
     return config
