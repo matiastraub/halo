@@ -11,7 +11,7 @@ export default function Footer() {
             href="/"
             className="text-3xl text-[var(--primary-color)] [font-family:var(--font-family-heading)]"
           >
-            <img src="images/logo.avif" alt="Halo Logo" className="h-20" />
+            <img src="/images/logo.png" alt="Halo Logo" className="h-20" />
           </Link>
         </div>
         <div className="mb-8 flex flex-col justify-center sm:flex-row">
