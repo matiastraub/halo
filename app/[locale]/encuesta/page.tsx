@@ -7,11 +7,12 @@ import WebsiteTrafficChart from '../../components/WebsiteTrafficChart'
 import PerformanceSummary from '../../components/PerformanceSummary'
 import OrdersTable from '../../components/OrdersTable'
 import { getPieChartData, getResultados } from 'app/lib/candidatos'
+import { CandidatoBarChartData, CandidatoPieChartData } from 'app/types/chartData'
 
 const Dashboard = () => {
-  const [data, setData] = useState([])
-  const [pie, setPie] = useState<{ candidato: string; votos: number; rate?: number }[]>([])
-  const [resultados, setResultados] = useState<{ candidato: string; votos: number }[]>([])
+  const [, setData] = useState([])
+  const [pie, setPie] = useState<CandidatoBarChartData[]>([])
+  const [resultados, setResultados] = useState<CandidatoBarChartData[]>([])
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -47,7 +48,7 @@ const Dashboard = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <TrafficSourcesChart data={pie} />
+          <TrafficSourcesChart data={pie as CandidatoPieChartData[]} />
           <WebsiteTrafficChart />
         </div>
 
