@@ -1,3 +1,5 @@
+import { CandidatoPieChartData } from 'app/types/chartData'
+
 const candidatosShort: string[] = [
   'Jara',
   'Kaiser',
@@ -93,12 +95,6 @@ export const stableSort = (array: unknown[], comparator: (a: unknown, b: unknown
   return stabilizedThis.map((el) => el[0])
 }
 
-type candidatoObj = {
-  candidato: string
-  votos: number
-  color?: string
-  value?: number
-}
 const colors: string[] = ['red', 'orange', 'green', 'blue', 'magenta']
 
 export const getPieChartData = (data: { candidato: string; votos: number }[]) => {
@@ -107,10 +103,13 @@ export const getPieChartData = (data: { candidato: string; votos: number }[]) =>
     return acc
   }, 0)
 
-  const pie = data.reduce((acc: candidatoObj[], candidatoObj: candidatoObj, i) => {
-    acc.push({ ...candidatoObj, value: (candidatoObj.votos / conteo) * 100, color: colors[i] })
-    return acc
-  }, [])
+  const pie = data.reduce(
+    (acc: CandidatoPieChartData[], candidatoObj: CandidatoPieChartData, i) => {
+      acc.push({ ...candidatoObj, value: (candidatoObj.votos / conteo) * 100, color: colors[i] })
+      return acc
+    },
+    []
+  )
 
   return pie
 }
