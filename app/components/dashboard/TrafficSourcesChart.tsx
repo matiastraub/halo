@@ -5,11 +5,11 @@ import {
   CardHeader,
   CardTitle
 } from 'app/components/common/card'
-// eslint-disable-next-line no-use-before-define
+import { CandidatoPieChartData } from 'app/types/chartData'
+
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
-import { pieData } from '../../data/chartData'
-console.log('%c pieData', 'color: green', pieData)
-const TrafficSourcesChart = (props) => {
+
+const TrafficSourcesChart = (props: { data: CandidatoPieChartData[] }) => {
   const pieData = props.data
   console.log('%c pieData', 'color: orange', pieData)
   return (
@@ -30,7 +30,7 @@ const TrafficSourcesChart = (props) => {
               paddingAngle={5}
               dataKey="value"
             >
-              {pieData.map((entry: { color: string }, index: number) => (
+              {pieData.map((entry, index: number) => (
                 <Cell key={`cell-${index}`} fill={entry.color} />
               ))}
             </Pie>
@@ -45,19 +45,17 @@ const TrafficSourcesChart = (props) => {
           </PieChart>
         </ResponsiveContainer>
         <div className="flex justify-center space-x-4 mt-4">
-          {pieData.map(
-            (item: { candidato: string; color: string; value: number }, index: number) => (
-              <div key={index} className="flex items-center">
-                <div
-                  className="w-3 h-3 rounded-full mr-2"
-                  style={{ backgroundColor: item.color }}
-                ></div>
-                <span className="text-sm text-gray-600">
-                  {item.candidato}: {item.value}%
-                </span>
-              </div>
-            )
-          )}
+          {pieData.map((item, index: number) => (
+            <div key={index} className="flex items-center">
+              <div
+                className="w-3 h-3 rounded-full mr-2"
+                style={{ backgroundColor: item.color }}
+              ></div>
+              <span className="text-sm text-gray-600">
+                {item.candidato}: {item.value}%
+              </span>
+            </div>
+          ))}
         </div>
       </CardContent>
     </Card>
