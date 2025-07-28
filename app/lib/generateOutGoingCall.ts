@@ -120,7 +120,7 @@ export async function generateOutgoingCall(req: NextRequest) {
 
 async function createUltravoxCall(callConfig: CallConfig) {
   const ULTRAVOX_API_URL: string | undefined = process.env.ULTRAVOX_API_URL
-  const ULTRAVOX_API_KEY: string | undefined = process.env.ULTRAVOX_API_KEY
+  const ULTRAVOX_API_KEY: string | undefined = process.env.ULTRAVOX_X_API_KEY
 
   if (!ULTRAVOX_API_URL) {
     throw new Error('ULTRAVOX_API_URL environment variable is required')
