@@ -1,16 +1,15 @@
 // i18n.ts
 import { getRequestConfig } from 'next-intl/server'
-import { notFound } from 'next/navigation'
-import { locales } from '../config.ts'
+import { routing } from './routing.ts'
 
 type Locale = 'es' | 'en'
-
-export default getRequestConfig(async ({ locale }) => {
-  const resolvedLocale = locale || 'es' // Default to 'es' if locale is undefined
-
-  if (!resolvedLocale || !locales.includes(resolvedLocale as Locale)) return notFound()
+export default getRequestConfig(async ({ requestLocale }) => {
+  let locale: string | undefined = await requestLocale
+  if (!locale || !routing.locales.includes(locale as Locale)) {
+    locale = routing.defaultLocale
+  }
   return {
-    locale: resolvedLocale,
-    messages: (await import(`./messages/${resolvedLocale}.json`)).default
+    locale,
+    messages: (await import(`./messages/${locale}.json`)).default
   }
 })
