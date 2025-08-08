@@ -1,6 +1,11 @@
+'use client'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { useParams } from 'next/navigation'
+
 export default function Footer() {
+  const params = useParams()
+  const { locale } = params
   const t = useTranslations('Nav')
 
   return (
@@ -41,13 +46,13 @@ export default function Footer() {
             Blog
           </Link>
           <Link
-            href="/privacy-policy"
+            href={`/${locale}/${t('privacy-policy')}`}
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
             {t('privacyPolicy')}
           </Link>
           <Link
-            href="/terms-and-conditions"
+            href={`/${locale}/${'terms-and-conditions'}`}
             className="mx-8 text-lg text-[var(--gray-text-color)] hover:text-[var(--primary-color)]"
           >
             {t('termsConditions')}

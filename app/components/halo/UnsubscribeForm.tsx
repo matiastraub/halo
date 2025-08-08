@@ -35,11 +35,12 @@ export default function UnsubscribeForm(props: { email: string }) {
       newErrors.reason = t('errorReasonRequired') || 'Please select a reason'
     }
 
-    if (!formData.message.trim()) {
-      newErrors.message = t('errorMessageRequired') || 'Message is required'
-    } else if (formData.message.trim().length < 10) {
-      newErrors.message = t('errorMessageTooShort') || 'Message must be at least 10 characters long'
-    }
+    // if (!formData.message.trim()) {
+    //   newErrors.message = t('errorMessageRequired') || 'Message is required'
+    // }
+    // else if (formData.message.trim().length < 10) {
+    //   newErrors.message = t('errorMessageTooShort') || 'Message must be at least 10 characters long'
+    // }
 
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
