@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx,html}' // ajusta según tu estructura
+    './app/[locale]/**/*.{js,ts,jsx,tsx,mdx}' // rutas dinámicas [locale]'
   ],
   theme: {
     extend: {}
