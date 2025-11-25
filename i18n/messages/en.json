@@ -1,7 +1,7 @@
 {
     "AboutUs": {
         "aboutUsTitle": "Who <span>are we?</span>",
-        "aboutUsDesc": "With over 20 years of experience in the IT sector, I've led digital transformation initiatives in Canada and now bring my international expertise and team to Chile in business process improvement, ERP implementation, and the development of intelligent AI agents that redefine operational efficiency.",
+        "aboutUsDesc": "With over 20 years of experience in the IT sector, we've led digital transformation initiatives in Canada and now bring our international expertise and team to Chile in business process improvement, ERP implementation, and the development of intelligent AI agents that redefine operational efficiency.",
         "aboutUsList-1": "Over 20 years of hands-on experience improving business workflows and operations.",
         "aboutUsList-2": "Proven track record of successful ERP implementations across diverse industries.",
         "aboutUsList-3": "Expertise in AI-driven automation tailored to your unique business needs.",
@@ -20,7 +20,7 @@
         "contactPhoneTitle": "Phone",
         "contactPhoneContent": "+56 9 5634 3596",
         "contactAddressTitle": "Address",
-        "contactAddressContent": "Avenida Las Acacias 22, Santiago",
+        "contactAddressContent": "Avda. Presidente Kennedy 7440, oficina 701, Vitacura, Santiago",
         "contactFormName": "Name",
         "contactFormNamePlaceholder": "Name",
         "contactFormEmail": "Email",
@@ -47,8 +47,8 @@
         "errorMessageNotSent": "Failed to send message. Please try again later.",
         "btnSending": "Sending..."
     },
-    "EntregarClave": {
-        "title": "Entregar Clave",
+    "Demo": {
+        "title": "Demo",
         "desc": "Si necesitas entregar una clave de acceso o información confidencial, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.",
         "contactFormName": "Nombre",
         "contactFormNamePlaceholder": "Nombre",
@@ -63,6 +63,36 @@
         "contactFormCategory-1": "Chatbot (Web o WhatsApp)",
         "contactFormCategory-2": "Agente de voz (Automatización de llamadas)",
         "contactFormDesc": "Si necesitas entregar una clave de acceso o información confidencial, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible."
+    },
+    "EntregarClave": {
+        "title": "Entregar Clave",
+        "desc": "Please fill out all the fields and you will activate your demo for free.",
+        "contactFormName": "Nombre",
+        "contactFormNamePlaceholder": "Nombre",
+        "contactFormEmail": "Email",
+        "contactFormEmailPlaceholder": "Email",
+        "contactFormSubject": "Asunto",
+        "contactFormSubjectPlaceholder": "Asunto",
+        "contactFormMessage": "Mensaje",
+        "contactFormMessagePlaceholder": "Mensaje",
+        "contactFormCategory": "Elige una opción",
+        "contactFormCategoryPlaceholder": "Elige una opción",
+        "contactFormCategory-1": "Chatbot (Web o WhatsApp)",
+        "contactFormCategory-2": "Agente de voz (Automatización de llamadas)"
+    },
+    "DynamicForm": {
+        "invalidFormat": "Invalid format",
+        "isRequired": "is required",
+        "validEmail": "Please enter a valid email address",
+        "validNumber": "Please enter a valid number",
+        "validPhoneNumber": "Please enter a valid phone number",
+        "minLengthChar": "must be at least %s characters long",
+        "maxLengthChar": "must be at most %s characters long",
+        "minLengthNumber": "must be at least %s",
+        "maxLengthNumber": "must be at most %s",
+        "successMessage": "Form submitted successfully!",
+        "errorMessage": "Failed to submit form. Please try again.",
+        "submitButtonText": "Submit"
     },
     "Home": {
         "monitorBusinessPerformance": "Monitor your business performance and key metrics",
@@ -147,7 +177,8 @@
         "choosePlan-price-3": "$599.000",
         "choosePlan-subcription-3": "Monthly Subscription",
         "choosePlan-items-3-1": "Unlimited Users",
-        "choosePlan-items-3-3": "Unlimited Project Creation",
+        "choosePlan-items-3-2": "Unlimited Project Creation",
+        "choosePlan-items-3-3": "Compatibilidad con todo tipo de proyectos",
         "choosePlan-items-3-4": "Support for All Project Types",
         "choosePlan-items-3-5": "Integrate with Popular Tools",
         "choosePlan-items-3-6": "Advanced Sharing Options",
@@ -199,7 +230,7 @@
     "PrivacyPolicy": {
         "title": "Privacy Policy",
         "date": "<strong>Last updated:</strong> 07/08/2025",
-        "desc": "At Halo SpA (\"we\", \"us\" or \"our\"), located at Avda. Acacias 22, Santiago, Chile, we value your privacy and are committed to protecting your personal data in accordance with Law 19.628 on the Protection of Private Life.",
+        "desc": "At Halo SpA (\"we\", \"us\" or \"our\"), located at Avda. Presidente Kennedy 7440, oficina 701,Vitacura, Santiago, Chile, we value your privacy and are committed to protecting your personal data in accordance with Law 19.628 on the Protection of Private Life.",
         "title-1": "1. Information We Collect",
         "list-1-1": "<strong>Information provided by the user:</strong> name, email address, contact details, and any other information you choose to share.",
         "list-1-2": "<strong>Technical information:</strong> browsing data (e.g. IP, browser type, pages visited, device).",
@@ -233,7 +264,7 @@
         "text-10-email-label": "Email:",
         "text-10-email": "privacidad@halo.cl",
         "text-10-address-label": "Address:",
-        "text-10-address": " Avda. Acacias 22, Santiago, Chile"
+        "text-10-address": " Avda. Presidente Kennedy 7440, oficina 701,Vitacura, Santiago, Chile"
     },
     "TermsAndConditions": {
         "title": "Terms & Conditions",

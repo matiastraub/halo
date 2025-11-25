@@ -1,7 +1,7 @@
 {
     "AboutUs": {
         "aboutUsTitle": "¿Quiénes <span>somos?</span>",
-        "aboutUsDesc": "Con más de 20 años de experiencia en el sector de TI, he liderado iniciativas de transformación digital en Canadá y ahora traigo mi experiencia y equipo internacional a Chile en mejora de procesos de negocio, implementación de ERP y el desarrollo de agentes de IA que redefinen la eficiencia operativa.",
+        "aboutUsDesc": "Con más de 20 años de experiencia en el sector de TI, hemos liderado iniciativas de transformación digital en Canadá y ahora traemos nuestra experiencia y equipo internacional a Chile en mejora de procesos de negocio, implementación de ERP y el desarrollo de agentes de IA que redefinen la eficiencia operativa.",
         "aboutUsList-1": "Tenemos más de 20 años de experiencia práctica en la mejora de flujos de trabajo y operaciones empresariales.",
         "aboutUsList-2": "Historial comprobado de implementaciones exitosas de ERP en diversas industrias.",
         "aboutUsList-3": "Experiencia en automatización impulsada por IA adaptada a las necesidades únicas de su negocio.",
@@ -20,7 +20,7 @@
         "contactPhoneTitle": "Teléfono: ",
         "contactPhoneContent": "+56 9 5634 3596",
         "contactAddressTitle": "Dirección: ",
-        "contactAddressContent": "Avenida Las Acacias 22, Santiago",
+        "contactAddressContent": "Avda. Presidente Kennedy 7440, oficina 701, Vitacura, Santiago",
         "contactFormName": "Nombre",
         "contactFormNamePlaceholder": "Nombre",
         "contactFormEmail": "Email",
@@ -46,6 +46,36 @@
         "successMessageSent": "¡Su mensaje se ha enviado correctamente! Nos pondremos en contacto con usted pronto.",
         "errorMessageNotSent": "Error al enviar el mensaje. Inténtelo de nuevo más tarde.",
         "btnSending": "Enviando..."
+    },
+    "Demo": {
+        "title": "Demo",
+        "desc": "Llena los campos y recibirás la activación de tu demo gratis.",
+        "contactFormName": "Nombre",
+        "contactFormNamePlaceholder": "Nombre",
+        "contactFormEmail": "Email",
+        "contactFormEmailPlaceholder": "Email",
+        "contactFormSubject": "Asunto",
+        "contactFormSubjectPlaceholder": "Asunto",
+        "contactFormMessage": "Mensaje",
+        "contactFormMessagePlaceholder": "Mensaje",
+        "contactFormCategory": "Elige una opción",
+        "contactFormCategoryPlaceholder": "Elige una opción",
+        "contactFormCategory-1": "Chatbot (Web o WhatsApp)",
+        "contactFormCategory-2": "Agente de voz (Automatización de llamadas)"
+    },
+    "DynamicForm": {
+        "invalidFormat": "Formato inválido",
+        "isRequired": "es obligatorio",
+        "validEmail": "Por favor, introduzca una dirección de correo electrónico válida",
+        "validNumber": "Por favor, introduzca un número válido",
+        "validPhoneNumber": "Por favor, introduzca un número de teléfono válido",
+        "minLengthChar": "Debe tener al menos %s caracteres",
+        "maxLengthChar": "Debe tener como máximo %s caracteres",
+        "minLengthNumber": "Debe ser al menos %s",
+        "maxLengthNumber": "Debe ser como máximo %s",
+        "successMessage": "¡Formulario enviado con éxito!",
+        "errorMessage": "Error al enviar el formulario. Por favor, inténtelo de nuevo.",
+        "submitButtonText": "Enviar"
     },
     "EntregarClave": {
         "title": "Entregar Clave",
@@ -205,7 +235,7 @@
     "PrivacyPolicy": {
         "title": "Política de Privacidad",
         "date": "<strong>Última actualización:</strong> 08/07/2025",
-        "desc": "En Halo SpA (\"nosotros\", \"nos\" o \"nuestro\"), con domicilio en avda. Acacias 22, Santiago, Chile, valoramos tu privacidad y estamos comprometidos a proteger tus datos personales de acuerdo con la Ley 19.628 sobre Protección de la Vida Privada.",
+        "desc": "En Halo SpA (\"nosotros\", \"nos\" o \"nuestro\"), con domicilio en Avda. Presidente Kennedy 7440, oficina 701,Vitacura, Santiago, Chile, valoramos tu privacidad y estamos comprometidos a proteger tus datos personales de acuerdo con la Ley 19.628 sobre Protección de la Vida Privada.",
         "title-1": "1. Información que recopilamos",
         "list-1-1": "<strong>Información proporcionada por el usuario:</strong> nombre, correo electrónico, datos de contacto y cualquier otra información que decidas compartir.",
         "list-1-2": "<strong>Información técnica:</strong> datos de navegación (p.ej. IP, tipo de navegador, páginas visitadas, dispositivo).",
@@ -239,7 +269,7 @@
         "text-10-email-label": "Correo:",
         "text-10-email": "privacidad@halo.cl",
         "text-10-address-label": "Dirección:",
-        "text-10-address": " Avda. Acacias 22, Santiago, Chile"
+        "text-10-address": " Avda. Presidente Kennedy 7440, oficina 701,Vitacura, Santiago, Chile"
     },
     "TermsAndConditions": {
         "title": "Términos y Condiciones",

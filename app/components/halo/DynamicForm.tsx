@@ -1,4 +1,5 @@
 import React, { useState, useCallback, JSX } from 'react'
+import { useTranslations } from 'next-intl'
 
 // Types and Interfaces
 export interface FormFieldOption {
@@ -6,19 +7,21 @@ export interface FormFieldOption {
   label: string
 }
 
+type DynamicFormFieldType =
+  | 'text'
+  | 'email'
+  | 'tel'
+  | 'number'
+  | 'select'
+  | 'textarea'
+  | 'checkbox'
+  | 'radio'
+  | 'date'
+  | 'password'
+
 export interface FormField {
   name: string
-  type:
-    | 'text'
-    | 'email'
-    | 'tel'
-    | 'number'
-    | 'select'
-    | 'textarea'
-    | 'checkbox'
-    | 'radio'
-    | 'date'
-    | 'password'
+  type: DynamicFormFieldType
   label: string
   placeholder?: string
   required?: boolean
@@ -112,14 +115,12 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
   fieldClassName = '',
   errorClassName = 'text-red-600 text-sm mt-1',
   loadingText = 'Submitting...',
-  successMessage = 'Form submitted successfully!',
-  errorMessage = 'Failed to submit form. Please try again.',
   resetOnSuccess = true,
   validateOnChange = true,
   showRequiredIndicator = true
   //t = (key: string) => key
 }) => {
-  //const t = useTranslations('DynamicForm')
+  const t = useTranslations('DynamicForm')
   // Initialize form data
   const initializeFormData = useCallback((): Record<string, unknown> => {
     const initialData: Record<string, unknown> = {}
@@ -154,9 +155,9 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
     // Required validation
     if (field.required) {
       if (field.type === 'checkbox' && !value) {
-        return field.requiredMessage || `${field.label} is required`
+        return field.requiredMessage || `${field.label} ${t('isRequired')}`
       } else if (field.type !== 'checkbox' && (!value || !value.toString().trim())) {
-        return field.requiredMessage || `${field.label} is required`
+        return field.requiredMessage || `${field.label} ${t('isRequired')}`
       }
     }
 
@@ -169,43 +170,53 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
     switch (field.type) {
       case 'email':
         if (!validateEmail(value as string)) {
-          return field.invalidMessage || 'Please enter a valid email address'
+          return field.invalidMessage || t('validEmail')
         }
         break
       case 'tel':
         if (!validatePhone(value as string)) {
-          return field.invalidMessage || 'Please enter a valid phone number'
+          return field.invalidMessage || t('validPhoneNumber')
         }
         break
       case 'number':
         if (isNaN(Number(value))) {
-          return field.invalidMessage || 'Please enter a valid number'
+          return field.invalidMessage || t('validNumber')
         }
         break
     }
 
     // Length validation
     if (field.minLength && value.toString().length < field.minLength) {
-      return field.minLengthMessage || `Must be at least ${field.minLength} characters`
+      return (
+        field.minLengthMessage ||
+        t('minLengthChar').replace('%s', field?.minLength as unknown as string)
+      )
     }
     if (field.maxLength && value.toString().length > field.maxLength) {
-      return field.maxLengthMessage || `Must be no more than ${field.maxLength} characters`
+      return (
+        field.maxLengthMessage ||
+        t('maxLengthChar').replace('%s', field?.minLength as unknown as string)
+      )
     }
 
     // Number range validation
     if (field.type === 'number') {
       const numValue = Number(value)
       if (field.min !== undefined && numValue < field.min) {
-        return field.minMessage || `Must be at least ${field.min}`
+        return (
+          field.minMessage || t('minLengthNumber').replace('%s', field.min as unknown as string)
+        )
       }
       if (field.max !== undefined && numValue > field.max) {
-        return field.maxMessage || `Must be no more than ${field.max}`
+        return (
+          field.maxMessage || t('maxLengthNumber').replace('%s', field.max as unknown as string)
+        )
       }
     }
 
     // Pattern validation
     if (field.pattern && !new RegExp(field.pattern).test(value.toString())) {
-      return field.invalidMessage || 'Invalid format'
+      return field.invalidMessage || t('invalidFormat')
     }
 
     // Custom validation
@@ -286,7 +297,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
 
       setAlert({
         type: 'success',
-        message: successMessage
+        message: t('successMessage')
       })
 
       if (resetOnSuccess) {
@@ -297,7 +308,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({
       console.error('Form submission error:', error)
       setAlert({
         type: 'error',
-        message: error instanceof Error ? error.message : errorMessage
+        message: error instanceof Error ? error.message : t('errorMessage')
       })
     } finally {
       setIsSubmitting(false)
