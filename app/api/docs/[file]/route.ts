@@ -1,31 +1,51 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { NextRequest, NextResponse } from 'next/server'
 import { createReadStream, existsSync } from 'fs'
 import { join } from 'path'
+import mime from 'mime'
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { file } = req.query
+/**
+ * Nota: extraemos el `file` desde request.nextUrl.pathname para evitar problemas
+ * de tipos con `context.params` (string | string[]).
+ */
+export async function GET(req: NextRequest) {
+  // pathname: "/api/docs/<file>"
+  const parts = req.nextUrl.pathname.split('/').filter(Boolean)
+  const file = decodeURIComponent(parts[parts.length - 1] || '')
 
-  if (!file || typeof file !== 'string') {
-    return res.status(400).json({ error: 'Invalid file request' })
+  if (!file) {
+    return NextResponse.json({ error: 'Invalid file request' }, { status: 400 })
+  }
+
+  // bloqueo simple de directory traversal
+  if (file.includes('..')) {
+    return NextResponse.json({ error: 'Invalid path' }, { status: 400 })
   }
 
   const filePath = join(process.cwd(), 'public', 'docs', file)
 
   if (!existsSync(filePath)) {
-    return res.status(404).json({ error: 'File not found' })
+    return NextResponse.json({ error: 'File not found' }, { status: 404 })
   }
-
-  // Headers before streaming
-  res.setHeader('Content-Type', 'application/pdf')
-  res.setHeader('Content-Disposition', `inline; filename="${file}"`)
 
   const stream = createReadStream(filePath)
 
-  // Handle unexpected stream errors
-  stream.on('error', (err) => {
-    console.error('Stream error:', err)
-    res.destroy(err)
+  const readable = new ReadableStream({
+    start(controller) {
+      stream.on('data', (chunk) => controller.enqueue(chunk))
+      stream.on('end', () => controller.close())
+      stream.on('error', (err) => controller.error(err))
+    },
+    cancel() {
+      stream.destroy()
+    }
   })
 
-  stream.pipe(res)
+  const contentType = mime.getType(file) || 'application/octet-stream'
+
+  return new NextResponse(readable, {
+    headers: {
+      'Content-Type': contentType,
+      'Content-Disposition': `inline; filename="${file}"`
+    }
+  })
 }
