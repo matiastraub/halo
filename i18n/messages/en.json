@@ -49,9 +49,10 @@
     },
     "Demo": {
         "title": "Demo",
-        "desc": "Si necesitas entregar una clave de acceso o información confidencial, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.",
-        "contactFormName": "Nombre",
-        "contactFormNamePlaceholder": "Nombre",
+        "desc": "If you need to deliver an access key or confidential information, please complete the following form and we will contact you as soon as possible.",
+        "successMessage": "Form submitted successfully!",
+        "contactFormName": "Name",
+        "contactFormNamePlaceholder": "Name",
         "contactFormEmail": "Email",
         "contactFormEmailPlaceholder": "Email",
         "contactFormSubject": "Asunto",
