@@ -9,18 +9,23 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     return res.status(400).json({ error: 'Invalid file request' })
   }
 
-  const rootPath = process.cwd()
-
-  // Build path to `/public/docs/<file>`
-  const filePath = join(rootPath, 'public', 'docs', file)
+  const filePath = join(process.cwd(), 'public', 'docs', file)
 
   if (!existsSync(filePath)) {
     return res.status(404).json({ error: 'File not found' })
   }
 
+  // Headers before streaming
   res.setHeader('Content-Type', 'application/pdf')
+  res.setHeader('Content-Disposition', `inline; filename="${file}"`)
+
   const stream = createReadStream(filePath)
 
-  stream.on('error', () => res.status(500).json({ error: 'Error reading file' }))
+  // Handle unexpected stream errors
+  stream.on('error', (err) => {
+    console.error('Stream error:', err)
+    res.destroy(err)
+  })
+
   stream.pipe(res)
 }
