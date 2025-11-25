@@ -50,6 +50,7 @@
     "Demo": {
         "title": "Demo",
         "desc": "Llena los campos y recibirás la activación de tu demo gratis.",
+        "successMessage": "¡Formulario enviado con éxito!",
         "contactFormName": "Nombre",
         "contactFormNamePlaceholder": "Nombre",
         "contactFormEmail": "Email",
